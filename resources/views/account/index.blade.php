@@ -8,7 +8,6 @@
             <span class="text-uppercase page-subtitle">{{ _('Settings and user management') }}</span>
             <h3 class="page-title">{{ __('Account') }}</h3>
 
-            nog een keer dan :).
         </div>
     </div>
     <!-- End Page Header -->
