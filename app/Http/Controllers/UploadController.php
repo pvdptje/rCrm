@@ -9,6 +9,8 @@ namespace App\Http\Controllers;
 
 use App\Account;
 use App\Client;
+use App\Events\BeforeFileUpload;
+use App\Events\NewFileUploaded;
 use App\rCrm\Uploader;
 use App\User;
 use Illuminate\Auth\Events\Registered;
@@ -48,13 +50,17 @@ class UploadController extends Controller
     }
 
     /**
+     * @param Request $request
      * @param $uploadableType
      * @param $selector
-     * @param null $clientId
+     * @return string
      * @throws \Exception
      */
     public function upload(Request $request, $uploadableType, $selector)
     {
+
+        event( new BeforeFileUpload($request, $uploadableType, $selector));
+
         if (!isset($this->uploadableTypes[$uploadableType])){
             throw new \Exception('Invalid uploadable type');
         }
@@ -82,9 +88,13 @@ class UploadController extends Controller
                 break;
         }
 
-        return $this->uploader->setUploadable($uploadable)
+        $fileUrl = $this->uploader->setUploadable($uploadable)
             ->setUploadedFile($request->file($selector))
             ->store($selector, $request->get('overwrite'));
+
+        event( new NewFileUploaded($this->uploader->getUpload(), $selector)); #Throw an event so we can do something with the file if necessary later on.
+
+        return $fileUrl;
     }
 }
 

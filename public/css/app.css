@@ -1,7 +1,3 @@
-a {
-  color: anus;
-}
-
 /*
  * Shards Dashboard Lite UI Kit v1.1.0
  * Project URL: https://designrevision.com/downloads/shards-dashboard-lite
@@ -6784,5 +6780,19 @@ html .ql-toolbar .ql-picker .ql-picker-options {
 
 .error__content p {
   color: #818EA3;
+}
+
+.account-card #avatar-img {
+  max-width: 140px;
+  max-height: 140px;
+}
+
+.account-card a.change-photo {
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.account-card a.change-photo:hover {
+  text-decoration: underline;
 }
 

@@ -1,0 +1,15 @@
+.account-card {
+  #avatar-img {
+    max-width:140px;go
+    max-height:140px;
+  }
+
+  a.change-photo {
+    font-size:10px;
+    cursor:pointer;
+    &:hover {
+      text-decoration:underline;
+    }
+  }
+
+}

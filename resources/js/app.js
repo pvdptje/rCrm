@@ -3,11 +3,18 @@
 * Copyright 2011-2018 DesignRevision
 * SEE LICENSE FILE
 */
+
+
+
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
         typeof define === 'function' && define.amd ? define(factory) :
             (factory());
 }(this, (function () { 'use strict';
+
+
+
+
 
     if (typeof Chart === 'undefined') {
         throw new Error('Shards Dashboard requires the Chart.js library in order to function properly.');
@@ -21,32 +28,6 @@
         }
     });
 
-    /**
-     * Chart.js - Line Chart with Vertical Line
-     */
-    Chart.defaults.LineWithLine = Chart.defaults.line;
-    Chart.controllers.LineWithLine = Chart.controllers.line.extend({
-        draw: function draw(ease) {
-            Chart.controllers.line.prototype.draw.call(this, ease);
-            if (this.chart.tooltip._active && this.chart.tooltip._active.length) {
-                var activePoint = this.chart.tooltip._active[0],
-                    ctx = this.chart.ctx,
-                    x = activePoint.tooltipPosition().x,
-                    topY = this.chart.scales['y-axis-0'].top,
-                    bottomY = this.chart.scales['y-axis-0'].bottom;
-
-                // Draw the line
-                ctx.save();
-                ctx.beginPath();
-                ctx.moveTo(x, topY);
-                ctx.lineTo(x, bottomY);
-                ctx.lineWidth = 0.5;
-                ctx.strokeStyle = '#ddd';
-                ctx.stroke();
-                ctx.restore();
-            }
-        }
-    });
 
     $(document).ready(function () {
 
@@ -74,6 +55,38 @@
         $('.toggle-sidebar').click(function (e) {
             $('.main-sidebar').toggleClass('open');
         });
+
+        /**
+         * Avatar upload
+         */
+        $('input[name=avatar]').change(function(e){
+            var file = e.target.files[0];
+            var form = new FormData;
+            var imgId = $(this).data('img');
+            var img = $(imgId);
+            var avatarErrorDiv = $("#avatar-error");
+
+            avatarErrorDiv.addClass('d-none');
+
+            form.append('avatar', file);
+            form.append('_token', $(this).data('token'));
+
+            $.post({
+                url: '/upload/user/avatar',
+                data: form,
+                processData: false,
+                contentType: false
+            }).done(function(response){
+                img.attr('src', response);
+            }).fail(function(error){
+                var errorMessage = error.responseJSON.errors.avatar[0];
+                avatarErrorDiv.html('<p class="mb-0">'+ errorMessage +'</p>');
+                avatarErrorDiv.removeClass('d-none');
+            });
+
+        });
+
     });
 
 })));
+

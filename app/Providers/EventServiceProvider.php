@@ -2,12 +2,17 @@
 
 namespace App\Providers;
 
+use App\Events\BeforeFileUpload;
 use App\Listeners\CreateAccountAfterRegister;
+use App\Listeners\ValidateAvatarUpload;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Event;
 
+/**
+ * Class EventServiceProvider
+ * @package App\Providers
+ */
 class EventServiceProvider extends ServiceProvider
 {
     /**
@@ -20,6 +25,9 @@ class EventServiceProvider extends ServiceProvider
             CreateAccountAfterRegister::class,
             SendEmailVerificationNotification::class,
         ],
+        BeforeFileUpload::class => [
+            ValidateAvatarUpload::class,
+        ]
     ];
 
     /**
@@ -30,7 +38,5 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-
-        //
     }
 }

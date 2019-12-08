@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\BaseRepository;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 
@@ -16,13 +17,16 @@ class AccountController extends Controller
      */
     protected $auth;
 
+    protected $baseRepository;
+
     /**
      * AccountController constructor.
      * @param Guard $auth
      */
-    public function __construct(Guard $auth)
+    public function __construct(Guard $auth, BaseRepository $baseRepository)
     {
         $this->auth = $auth;
+        $this->baseRepository = $baseRepository;
     }
 
     /**
@@ -35,6 +39,8 @@ class AccountController extends Controller
         $account = $user->accounts()->first();
         $users   = $account->users();
 
-        return view('account.index', compact('user', 'account', 'users'));
+        $avatar = $this->baseRepository->getUpload($user, 'avatar');
+
+        return view('account.index', compact('user', 'account', 'users', 'avatar'));
     }
 }

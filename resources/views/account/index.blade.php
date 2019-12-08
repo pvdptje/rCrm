@@ -163,19 +163,31 @@
 
         </div>
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card account-card">
                 <div class="card-header border-bottom">
                     <h6 class="mb-0">{{ __('Your details') }}</h6>
                 </div>
                 <div class="card-body text-center">
 
                     <ul class="list-unstyled">
-                        <form method="post" action="upload/user/avatar" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="overwrite" value="1" />
-                        <input type="file" name="avatar" />
-                            <input type="submit">
-                        </form>
+
+                        <li>
+                            @if($avatar)
+                                <img id="avatar-img" src="{{asset($avatar->path)}}" title="{{$user->name}}" />
+                            @else
+                                <img id="avatar-img" src="/images/avatars/0.jpg" />
+                            @endif
+
+                            <div class="alert alert-danger d-none" id="avatar-error">
+
+                            </div>
+                            <input class="d-none" type="file" name="avatar" data-token="<?php echo csrf_token()?>" data-img="#avatar-img" data-overwrite="1" />
+                        </li>
+                        <li>
+                            <a class="change-photo" onclick="$('input[name=avatar]').trigger('click')">{{ _('Change photo') }}</a>
+                        </li>
+
+
 
                         <li class="font-weight-bold">
                             {{ $user->name }}
