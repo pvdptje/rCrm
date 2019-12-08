@@ -7,8 +7,6 @@
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
             <span class="text-uppercase page-subtitle">{{ _('Settings and user management') }}</span>
             <h3 class="page-title">{{ __('Account') }}</h3>
-
-            Ff kijke hoe snel die deployment is vriend :).
         </div>
     </div>
     <!-- End Page Header -->
