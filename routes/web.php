@@ -19,3 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/account', 'AccountController@index')->name('account.index');
+
+/**
+ * Test for commit ..git
+ */
