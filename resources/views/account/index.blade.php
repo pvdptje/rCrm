@@ -170,6 +170,13 @@
                 <div class="card-body text-center">
 
                     <ul class="list-unstyled">
+                        <form method="post" action="upload/user/avatar" enctype="multipart/form-data">
+                            @csrf
+                            <input type="hidden" name="overwrite" value="1" />
+                        <input type="file" name="avatar" />
+                            <input type="submit">
+                        </form>
+
                         <li class="font-weight-bold">
                             {{ $user->name }}
                         </li>

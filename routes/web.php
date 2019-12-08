@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/account', 'AccountController@index')->name('account.index');
+
+Route::post('/upload/{uploadableType}/{selector}', 'UploadController@upload')->name('upload.upload');
