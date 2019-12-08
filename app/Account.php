@@ -24,4 +24,11 @@ class Account extends Model
     {
         return $this->belongsToMany(User::class, 'user_to_account');
     }
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
+     */
+    public function uploads()
+    {
+        return $this->morphMany(Upload::class, 'uploadable');
+    }
 }
