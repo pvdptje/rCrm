@@ -173,15 +173,15 @@
 
                         <li>
                             @if($avatar)
-                                <img id="avatar-img" src="{{asset($avatar->path)}}" title="{{$user->name}}" />
+                                <img class="avatar-img" src="{{asset($avatar->path)}}" title="{{$user->name}}" />
                             @else
-                                <img id="avatar-img" src="/images/avatars/0.jpg" />
+                                <img class="avatar-img" src="/images/avatars/0.jpg" />
                             @endif
 
                             <div class="alert alert-danger d-none" id="avatar-error">
 
                             </div>
-                            <input class="d-none" type="file" name="avatar" data-token="<?php echo csrf_token()?>" data-img="#avatar-img" data-overwrite="1" />
+                            <input class="d-none" type="file" name="avatar" data-token="<?php echo csrf_token()?>" data-img=".avatar-img" data-overwrite="1" />
                         </li>
                         <li>
                             <a class="change-photo" onclick="$('input[name=avatar]').trigger('click')">{{ _('Change photo') }}</a>
