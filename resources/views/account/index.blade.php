@@ -162,6 +162,27 @@
             </div>
 
         </div>
-        <div class="col-sm-4">12</div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header border-bottom">
+                    <h6 class="mb-0">{{ __('Your details') }}</h6>
+                </div>
+                <div class="card-body text-center">
+
+                    <ul class="list-unstyled">
+                        <li class="font-weight-bold">
+                            {{ $user->name }}
+                        </li>
+                        <li>
+                            {{ $user->email }}
+                        </li>
+                        <li class="mt-4">
+                            <a href="#">{{ __('Edit details') }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </div>
 @endsection
