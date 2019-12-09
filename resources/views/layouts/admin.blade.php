@@ -182,7 +182,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link  dropdown-toggle text-nowrap px-3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <img class="user-avatar rounded-circle mr-2 logo-avatar avatar-img" src="{{ $companyLogo ? asset($companyLogo) : '/images/logos/rcrm_logo_small.png' }}" alt="{{ __('Company logo') }}">
+                                <img class="user-avatar rounded-circle mr-2 logo-avatar avatar-img" src="{{ $companyLogo ? asset($companyLogo) : '/images/logos/logo_transparent_small.png' }}" alt="{{ __('Company logo') }}">
                                 <span class="d-none d-md-inline-block">{{ $account->company_name }}</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-small">
