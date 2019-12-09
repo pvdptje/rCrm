@@ -8,36 +8,10 @@ namespace App\Http\Requests;
  *
  *
  * This validation class gets called in
- * the event listener for avatar upload validaton
+ * the event listener for avatar upload validation
  * @see \App\Listeners\ValidateAvatarUpload
  */
-class ValidateAvatarUpload
+class ValidateAvatarUpload extends ValidateImageUpload
 {
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array
-     */
-    public function rules()
-    {
-        return [
-            'avatar' => 'mimes:jpeg,bmp,png|max:2048'
-        ];
-    }
 
-    /**
-     * @return array
-     */
-    public function messages()
-    {
-        return [];
-    }
-
-    /**
-     * @return array
-     */
-    public function attributes()
-    {
-        return [];
-    }
 }

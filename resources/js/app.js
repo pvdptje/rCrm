@@ -85,6 +85,42 @@
         });
 
         /**
+         * Logo upload
+         *
+         * @todo Decide wether to wanna make this more generic,
+         * get ajax target also from data attribute
+         */
+
+        $('input[name=logo]').change(function(e){
+            var file = e.target.files[0];
+            var form = new FormData;
+            var imgId = $(this).data('img');
+            var img = $(imgId);
+            var avatarErrorDiv = $("#logo-error");
+
+
+            if(file){
+                avatarErrorDiv.addClass('d-none');
+                form.append('logo', file);
+                form.append('_token', $(this).data('token'));
+
+                $.post({
+                    url: '/upload/account/logo',
+                    data: form,
+                    processData: false,
+                    contentType: false
+                }).done(function(response){
+                    img.attr('src', response);
+                }).fail(function(error){
+                    var errorMessage = error.responseJSON.errors.logo[0];
+                    avatarErrorDiv.html('<p class="mb-0">'+ errorMessage +'</p>');
+                    avatarErrorDiv.removeClass('d-none');
+                });
+            }
+
+        });
+
+        /**
          * Confirm elements
          */
 

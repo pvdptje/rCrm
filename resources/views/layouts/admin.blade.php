@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Shards Dashboard Lite - Free Bootstrap Admin Template – DesignRevision</title>
+    <title>rCrm</title>
     <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -60,8 +60,10 @@
                 <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
                     <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
                         <div class="d-table m-auto">
-                            <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="/images/shards-dashboards-logo.svg" alt="{{  $account->company_name }}">
-                            <span class="d-none d-md-inline ml-1">{{  $account->company_name }}</span>
+                           {{-- <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="/images/logos/logo_rcrm_40px.png" alt="{{  $account->company_name }}">
+                            <span class="d-none d-md-inline ml-1">{{  $account->company_name }}</span>--}}
+
+                            <img src="/images/logos/logo_transparent_small.png" id="main-logo" class="d-inline-block align-top mr-1" alt="rCrm" />
                         </div>
                     </a>
                     <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
@@ -179,6 +181,17 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
+                            <a href="#" class="nav-link  dropdown-toggle text-nowrap px-3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img class="user-avatar rounded-circle mr-2 logo-avatar avatar-img" src="{{ $companyLogo ? asset($companyLogo) : '/images/logos/rcrm_logo_small.png' }}" alt="{{ __('Company logo') }}">
+                                <span class="d-none d-md-inline-block">{{ $account->company_name }}</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-small">
+                                <a class="dropdown-item" href="{{ route('account.index') }}">
+                                    <i class="material-icons">&#xE7FD;</i> {{ __('Edit company details') }}</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown border-left">
                             <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                                 <img class="user-avatar rounded-circle mr-2 avatar-img" src="/images/avatars/0.jpg" alt="User Avatar">
                                 <span class="d-none d-md-inline-block">{{ Auth::user()->name }}</span>

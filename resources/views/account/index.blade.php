@@ -33,6 +33,32 @@
                     <h6 class="m-0">{{ __('Company details') }}</h6>
                 </div>
                 <div class="card-body">
+
+
+                    <div id="change-logo" class="row">
+                        <div class="col-md-6 text-md-right">
+                            @if($logo)
+                                <img src="{{ asset($logo->path) }}" id="company-logo" class="d-inline-block align-top mr-1" alt="rCrm" />
+                            @else
+                                <img src="/images/logos/logo_transparent_small.png" id="company-logo" class="d-inline-block align-top mr-1" alt="rCrm" />
+                            @endif
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <input class="d-none" type="file" name="logo" data-token="<?php echo csrf_token()?>" data-img="#company-logo" data-overwrite="1" />
+
+                                <a class="change-logo pointer" onclick="$('input[name=logo]').trigger('click')"><i class="far fa-edit"></i> {{ __('Change company logo') }}</a>
+                                <br/> <small>{{ __('The company logo will be visible above e-mails you will send.') }}</small>
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="alert alert-danger d-none" id="logo-error"></div>
+                        </div>
+                   </div>
+
+
+
                     {!! Form::model($account, ['route' => 'account.update']) !!}
 
 

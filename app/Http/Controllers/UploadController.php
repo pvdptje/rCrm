@@ -75,7 +75,7 @@ class UploadController extends Controller
                 $uploadable = $this
                     ->auth
                     ->user()
-                    ->accounts()
+                    ->accounts
                     ->first();
                 break;
             case 'client':

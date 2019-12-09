@@ -6782,21 +6782,52 @@ html .ql-toolbar .ql-picker .ql-picker-options {
   color: #818EA3;
 }
 
-.account-card #avatar-img {
+.account-card .avatar-img {
   max-width: 140px;
   max-height: 140px;
 }
 
-.account-card a.change-photo {
+.account-card a.change-photo,
+.account-card a.change-logo {
   font-size: 10px;
   cursor: pointer;
 }
 
-.account-card a.change-photo:hover {
+.account-card a.change-photo:hover,
+.account-card a.change-logo:hover {
   text-decoration: underline;
 }
 
+div#change-logo {
+  margin-bottom: 15px;
+  padding-top: 15px;
+  background: #f9f9f9;
+  border: 1px solid #d6d6d6;
+}
+
+div#change-logo img {
+  max-width: 200px;
+  max-height: 100px;
+  margin-bottom: 15px;
+}
+
+div#change-logo a.change-logo:hover {
+  text-decoration: underline;
+}
+
+img#main-logo {
+  max-width: 130px;
+}
+
+.logo-avatar {
+  height: 30px;
+}
+
 .nav-item a {
+  cursor: pointer;
+}
+
+.pointer {
   cursor: pointer;
 }
 

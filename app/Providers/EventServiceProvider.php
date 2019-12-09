@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Events\BeforeFileUpload;
 use App\Listeners\CreateAccountAfterRegister;
 use App\Listeners\ValidateAvatarUpload;
+use App\Listeners\ValidateLogoUpload;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -27,6 +28,7 @@ class EventServiceProvider extends ServiceProvider
         ],
         BeforeFileUpload::class => [
             ValidateAvatarUpload::class,
+            ValidateLogoUpload::class,
         ]
     ];
 

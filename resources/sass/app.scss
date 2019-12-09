@@ -1,6 +1,10 @@
 @import 'shards-dashboards';
 @import 'custom/account';
+@import 'custom/app';
 
 .nav-item a {
+  cursor:pointer;
+}
+.pointer {
   cursor:pointer;
 }

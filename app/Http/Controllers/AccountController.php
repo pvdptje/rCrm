@@ -50,8 +50,9 @@ class AccountController extends Controller
         $users   = $account->users;
 
         $avatar = $this->baseRepository->getUpload($user, 'avatar');
+        $logo   = $this->baseRepository->getUpload($account, 'logo');
 
-        return view('account.index', compact('user', 'account', 'users', 'avatar'));
+        return view('account.index', compact('user', 'account', 'users', 'avatar', 'logo'));
     }
 
     /**
