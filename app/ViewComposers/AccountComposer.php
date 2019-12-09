@@ -45,7 +45,7 @@ class AccountComposer
     public function compose(View $view) : void
     {
         if(!isset(static::$composed['account'])){
-            static::$composed['account'] = $this->auth->user()->accounts()->first();
+            static::$composed['account'] = $this->auth->check() ? $this->auth->user()->accounts()->first() : [];
         }
 
         $view->with('account', static::$composed['account']);
