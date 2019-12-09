@@ -67,7 +67,6 @@
             var avatarErrorDiv = $("#avatar-error");
 
             avatarErrorDiv.addClass('d-none');
-
             form.append('avatar', file);
             form.append('_token', $(this).data('token'));
 
@@ -83,7 +82,17 @@
                 avatarErrorDiv.html('<p class="mb-0">'+ errorMessage +'</p>');
                 avatarErrorDiv.removeClass('d-none');
             });
+        });
 
+        /**
+         * Confirm elements
+         */
+
+        $('.confirm').click(function(e){
+            var message = $(this).data('msg');
+            if(!confirm(message)){
+                e.preventDefault();
+            }
         });
 
     });

@@ -10,8 +10,8 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="css/app.css">
-    <link rel="stylesheet" href="css/extras.1.1.0.min.css">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="/css/app.css">
+    <link rel="stylesheet" href="/css/extras.1.1.0.min.css">
     <style>
         @media screen and (min-width: 1280px){
             body {
@@ -60,8 +60,8 @@
                 <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
                     <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
                         <div class="d-table m-auto">
-                            <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard">
-                            <span class="d-none d-md-inline ml-1">Shards Dashboard</span>
+                            <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="/images/shards-dashboards-logo.svg" alt="{{  $account->company_name }}">
+                            <span class="d-none d-md-inline ml-1">{{  $account->company_name }}</span>
                         </div>
                     </a>
                     <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
@@ -86,11 +86,14 @@
                             <span>Blog Dashboard</span>
                         </a>
                     </li>--}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/account">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="material-icons">account_box</i>
-                            <span>Mijn account</span>
+                            <span>{{__('Account')}}</span>
                         </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/account">{{ __('Company details & users') }}</a>
+                        </div>
                     </li>
            {{--         <li class="nav-item">
                         <a class="nav-link " href="add-new-post.html">
@@ -177,7 +180,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                <img class="user-avatar rounded-circle mr-2 avatar-img" src="images/avatars/0.jpg" alt="User Avatar">
+                                <img class="user-avatar rounded-circle mr-2 avatar-img" src="/images/avatars/0.jpg" alt="User Avatar">
                                 <span class="d-none d-md-inline-block">{{ Auth::user()->name }}</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-small">

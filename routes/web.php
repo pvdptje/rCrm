@@ -17,7 +17,21 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/account', 'AccountController@index')->name('account.index');
 
-Route::post('/upload/{uploadableType}/{selector}', 'UploadController@upload')->name('upload.upload');
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('/account', 'AccountController@index')->name('account.index');
+    Route::post('/account/update', 'AccountController@update')->name('account.update');
+
+
+    Route::get('/user/create', 'AccountController@showAddUser')->name('account.addUser'); #@todo move this to user controller. uc@create
+    Route::post('/user/store', 'AccountController@storeAddUser')->name('account.addUser.store'); #@todo move this to user controller. uc@store
+
+    Route::get('/user/edit/{user?}', 'UserController@edit')->name('user.edit');
+    Route::post('/user/edit/{user?}', 'UserController@update')->name('user.update');
+    Route::get('/user/destroy/{user?}', 'UserController@destroy')->name('user.destroy');
+
+    Route::post('/upload/{uploadableType}/{selector}', 'UploadController@upload')->name('upload.upload');
+});
+

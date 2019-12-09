@@ -7,9 +7,22 @@
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
             <span class="text-uppercase page-subtitle">{{ _('Settings and user management') }}</span>
             <h3 class="page-title">{{ __('Account') }}</h3>
-
         </div>
     </div>
+
+    @if(!$errors->isEmpty())
+
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-danger">
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+    @endif
     <!-- End Page Header -->
     <!-- Small Stats Blocks -->
     <div class="row">
@@ -20,29 +33,14 @@
                     <h6 class="m-0">{{ __('Company details') }}</h6>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+                    {!! Form::model($account, ['route' => 'account.update']) !!}
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
 
                         <div class="form-group row">
                             <label for="company_name" class="col-md-4 col-form-label text-md-right">{{ __('Company name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="company_name" type="text" class="form-control @error('company_name') is-invalid @enderror" name="company_name" value="{{ old('company_name') }}" required autocomplete="company_name">
-
+                                {!! Form::text('company_name', null, ['class' => 'form-control']) !!}
                                 @error('company_name')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -52,11 +50,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Email') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Invoice email') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
+                                {!! Form::email('invoice_email', null, ['class' => 'form-control']) !!}
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -69,8 +66,7 @@
                             <label for="street" class="col-md-4 col-form-label text-md-right">{{ __('Street') }}</label>
 
                             <div class="col-md-6">
-                                <input id="street" type="text" class="form-control @error('street') is-invalid @enderror" name="street" value="{{ old('street') }}" required autocomplete="street">
-
+                                {!! Form::text('street', null, ['class' => 'form-control']) !!}
                                 @error('street')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -82,8 +78,7 @@
                             <label for="house_number" class="col-md-4 col-form-label text-md-right">{{ __('Number') }}</label>
 
                             <div class="col-md-6">
-                                <input id="house_number" type="text" class="form-control @error('house_number') is-invalid @enderror" name="house_number" value="{{ old('house_number') }}" required autocomplete="house_number">
-
+                                {!! Form::text('house_number', null, ['class' => 'form-control']) !!}
                                 @error('house_number')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -95,9 +90,7 @@
                             <label for="postcode" class="col-md-4 col-form-label text-md-right">{{ __('Postcode') }}</label>
 
                             <div class="col-md-6">
-                                <input id="postcode" type="text" class="form-control @error('house_number') is-invalid @enderror" name="postcode" value="{{ old('postcode') }}" required autocomplete="house_number">
-
-                                @error('house_number')
+                                {!! Form::text('postcode', null, ['class' => 'form-control']) !!}   @error('house_number')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -108,11 +101,7 @@
                             <label for="province" class="col-md-4 col-form-label text-md-right">{{ __('Province') }}</label>
 
                             <div class="col-md-6">
-                                <select id="province" class="form-control @error('province') is-invalid @enderror" required name="province">
-                                    @foreach(get_provinces() as $key => $province)
-                                        <option value="{{$key}}" {{ old('province') == $key ? 'selected' : '' }}>{{ $province }}</option>
-                                    @endforeach
-                                </select>
+                                {!! Form::select('province',get_provinces(), null, ['class' => 'form-control']) !!}
 
                                 @error('province')
                                 <span class="invalid-feedback" role="alert">
@@ -125,8 +114,7 @@
                             <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
 
                             <div class="col-md-6">
-                                <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" required autocomplete="city">
-
+                                {!! Form::text('city', null, ['class' => 'form-control']) !!}
 
                                 @error('city')
                                 <span class="invalid-feedback" role="alert">
@@ -139,8 +127,7 @@
                             <label for="country" class="col-md-4 col-form-label text-md-right">{{ __('Country') }}</label>
 
                             <div class="col-md-6">
-                                <input id="country" type="text" class="form-control @error('house_number') is-invalid @enderror" name="country" value="{{ old('country', 'Nederland') }}" required autocomplete="country">
-
+                                {!! Form::text('country', null, ['class' => 'form-control']) !!}
                                 @error('country')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -153,7 +140,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Save') }}
+                                   <i class="fa fa-save"></i> {{ __('Save') }}
                                 </button>
                             </div>
                         </div>
@@ -204,4 +191,59 @@
 
         </div>
     </div>
+    <div class="page-header row no-gutters py-4">
+        <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+            <span class="text-uppercase page-subtitle">{{ _('Users belonging to this account') }}</span>
+            <h3 class="page-title">{{ __('Users') }}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="float-left">{{ _('Users') }}</h6>
+
+                    <a href="{{ route('account.addUser') }}" class="float-right btn btn-primary">
+                        <i class="fa fa-plus"></i>
+                        {{ __('Add a new user') }}</a>
+
+                </div>
+                <div class="card-body">
+                    <table class="table mb-0">
+                        <thead class="bg-light">
+                        <tr>
+                            <th scope="col" class="border-0">#</th>
+                            <th scope="col" class="border-0">{{ _('Name') }}</th>
+                            <th scope="col" class="border-0">{{ _('Email') }}</th>
+                            <th scope="col" class="border-0"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($users as $user)
+                            <tr>
+                                <td>
+                                    {{ $user->id }}
+                                </td>
+                                <td>
+                                    {{ $user->name }}
+                                </td>
+                                <td>
+                                    {{$user->email}}
+                                </td>
+                                <td>
+                                    @if($user->id == Auth::user()->id)
+                                        <a href="{{ route('user.edit') }}">{{ __('Edit details') }}</a>
+                                    @else
+                                        <a href="{{ route('user.destroy', $user->id) }}" class="confirm" data-msg="{{ __('Are you absolutely sure?') }}">{{ __('Delete user') }}</a>
+                                    @endif
+                                </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @endsection
