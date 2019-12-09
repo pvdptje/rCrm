@@ -187,7 +187,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-small">
                                 <a class="dropdown-item" href="{{ route('account.index') }}">
-                                    <i class="material-icons">&#xE7FD;</i> {{ __('Edit company details') }}</a>
+                                    <i class="material-icons">&#xE7FD;</i> {{ __('Account index') }}</a>
                             </div>
                         </li>
 
