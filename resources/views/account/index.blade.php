@@ -5,7 +5,7 @@
     <!-- Page Header -->
     <div class="page-header row no-gutters py-4">
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-            <span class="text-uppercase page-subtitle">{{ _('Settings and user management') }}</span>
+            <span class="text-uppercase page-subtitle">{{ __('Settings and user management') }}</span>
             <h3 class="page-title">{{ __('Account') }}</h3>
         </div>
     </div>
@@ -193,7 +193,7 @@
     </div>
     <div class="page-header row no-gutters py-4">
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
-            <span class="text-uppercase page-subtitle">{{ _('Users belonging to this account') }}</span>
+            <span class="text-uppercase page-subtitle">{{ __('Users belonging to this account') }}</span>
             <h3 class="page-title">{{ __('Users') }}</h3>
         </div>
     </div>
