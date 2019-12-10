@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Traits\UsesSettings;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -10,6 +11,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Account extends Model
 {
+    use UsesSettings;
+
     /**
      * @var array
      */
@@ -31,4 +34,6 @@ class Account extends Model
     {
         return $this->morphMany(Upload::class, 'uploadable');
     }
+
+
 }

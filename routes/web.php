@@ -22,6 +22,13 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
     Route::get('/home', function(){
+
+
+        $user = \Illuminate\Support\Facades\Auth::user();
+
+        $user->saveSetting('key', 'value2');
+
+        dd('testing settings');
         return redirect('/account');
     });
 

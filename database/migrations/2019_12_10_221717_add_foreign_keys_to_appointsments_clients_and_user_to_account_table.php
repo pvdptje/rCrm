@@ -1,0 +1,59 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddForeignKeysToAppointsmentsClientsAndUserToAccountTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+/*        Schema::table('clients', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users');
+        });*/
+
+        Schema::table('appointments', function (Blueprint $table) {
+
+            $table->unsignedBigInteger('user_id')->change();
+            $table->foreign('user_id')->references('id')->on('users');
+        });
+
+        Schema::table('user_to_account', function (Blueprint $table) {
+            $table->unsignedBigInteger('user_id')->change();
+            $table->unsignedBigInteger('account_id')->change();
+
+            $table->foreign('account_id')->references('id')->on('accounts')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('accounts')->onDelete('cascade');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+    /*    Schema::table('clients', function (Blueprint $table) {
+            $table->dropForeign('clients_user_id_foreign');
+        });*/
+        Schema::table('user_to_account', function (Blueprint $table) {
+            $table->dropForeign('accounts_user_id_foreign');
+            $table->dropForeign('accounts_account_id_foreign');
+
+            $table->unsignedInteger('user_id')->change();
+            $table->unsignedInteger('account_id')->change();
+        });
+        Schema::table('appointments', function (Blueprint $table) {
+            $table->dropForeign('appointments_user_id_foreign');
+            $table->unsignedInteger('user_id')->change();
+        });
+
+
+    }
+}
