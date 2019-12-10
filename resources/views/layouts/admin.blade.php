@@ -13,12 +13,12 @@
     <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="/css/app.css">
     <link rel="stylesheet" href="/css/extras.1.1.0.min.css">
     <style>
-        @media screen and (min-width: 1280px){
+      /*  @media screen and (min-width: 1280px){
             body {
-                -moz-transform: scale(1.3); /* for Firefox, default 1*/
-                zoom:130%; /* For Chrome, IE, default 100%*/
+                -moz-transform: scale(1.3); !* for Firefox, default 1*!
+                zoom:130%; !* For Chrome, IE, default 100%*!
             }
-        }
+        }*/
     </style>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>

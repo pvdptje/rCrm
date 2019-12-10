@@ -11,6 +11,7 @@
     </div>
 
     @include('partials.errors')
+    @include('partials.message')
     <!-- End Page Header -->
     <!-- Small Stats Blocks -->
     <div class="row">

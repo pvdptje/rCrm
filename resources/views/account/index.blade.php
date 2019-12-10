@@ -9,20 +9,8 @@
             <h3 class="page-title">{{ __('Account') }}</h3>
         </div>
     </div>
-
-    @if(!$errors->isEmpty())
-
-        <div class="row">
-            <div class="col-12">
-                <div class="alert alert-danger">
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-
-    @endif
+    @include('partials.errors')
+    @include('partials.message')
     <!-- End Page Header -->
     <!-- Small Stats Blocks -->
     <div class="row">
@@ -181,9 +169,7 @@
                     <h6 class="mb-0">{{ __('Your details') }}</h6>
                 </div>
                 <div class="card-body text-center">
-
                     <ul class="list-unstyled">
-
                         <li>
                             @if($avatar)
                                 <img class="avatar-img" src="{{asset($avatar->path)}}" title="{{$user->name}}" />
@@ -199,9 +185,6 @@
                         <li>
                             <a class="change-photo" onclick="$('input[name=avatar]').trigger('click')">{{ _('Change photo') }}</a>
                         </li>
-
-
-
                         <li class="font-weight-bold">
                             {{ $user->name }}
                         </li>
@@ -209,7 +192,7 @@
                             {{ $user->email }}
                         </li>
                         <li class="mt-4">
-                            <a href="#">{{ __('Edit details') }}</a>
+                            <a href="{{ route('user.edit') }}">{{ __('Edit details') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -235,7 +218,7 @@
 
                 </div>
                 <div class="card-body">
-                    <table class="table mb-0">
+                    <table class="table table-responsive mb-0">
                         <thead class="bg-light">
                         <tr>
                             <th scope="col" class="border-0">#</th>
@@ -257,11 +240,10 @@
                                     {{$user->email}}
                                 </td>
                                 <td>
-                                    @if($user->id == Auth::user()->id)
-                                        <a href="{{ route('user.edit') }}">{{ __('Edit details') }}</a>
-                                    @else
-                                        <a href="{{ route('user.destroy', $user->id) }}" class="confirm" data-msg="{{ __('Are you absolutely sure?') }}">{{ __('Delete user') }}</a>
+                                    @if($user->id !== Auth::user()->id)
+                                      <a class="btn btn-danger" href="{{ route('user.destroy', $user->id) }}" class="confirm" data-msg="{{ __('Are you absolutely sure?') }}">{{ __('Delete user') }}</a>
                                     @endif
+                                      <a class="btn btn-primary" href="{{ route('user.edit') }}">{{ __('Edit details') }}</a>
                                 </td>
                             </tr>
                         @endforeach

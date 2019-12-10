@@ -6823,6 +6823,54 @@ img#main-logo {
   height: 30px;
 }
 
+a.action {
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 7px;
+  text-decoration: none;
+}
+
+a.action:active {
+  position: relative;
+  top: 1px;
+}
+
+a.action.blue {
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #3d94f6), to(#1e62d0));
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  background-color: #3d94f6;
+  border-radius: 6px;
+  border: 1px solid #337fed;
+  text-shadow: 0px 1px 0px #1570cd;
+}
+
+a.action.blue:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #1e62d0), to(#3d94f6));
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
+}
+
+a.action.red {
+  box-shadow: inset 0px 1px 0px 0px #fc9797;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #f53d3d), to(#cf1f1f));
+  background: linear-gradient(to bottom, #f53d3d 5%, #cf1f1f 100%);
+  background-color: #f53d3d;
+  border-radius: 6px;
+  border: 1px solid #eb3434;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #cc1616;
+}
+
+a.action.red:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #cf1f1f), to(#f53d3d));
+  background: linear-gradient(to bottom, #cf1f1f 5%, #f53d3d 100%);
+  background-color: #cf1f1f;
+}
+
 .nav-item a {
   cursor: pointer;
 }

@@ -6,15 +6,16 @@
     <div class="page-header row no-gutters py-4">
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
             @if($editableUser = Request::route('user'))
-                <span class="text-uppercase page-subtitle">{{ _('Edit details of') }} {{$editableUser->name}}</span>
+                <span class="text-uppercase page-subtitle">{{ __('Edit details of') }} {{$editableUser->name}}</span>
             @else
-                <span class="text-uppercase page-subtitle">{{ _('Edit your own details') }}</span>
+                <span class="text-uppercase page-subtitle">{{ __('Edit your own details') }}</span>
             @endif
             <h3 class="page-title">{{ __('Edit details') }}</h3>
         </div>
     </div>
 
     @include('partials.errors')
+    @include('partials.message')
     <!-- End Page Header -->
     <!-- Small Stats Blocks -->
     <div class="row">
@@ -25,9 +26,12 @@
                 </div>
                 <div class="card-body">
 
+                    @if($model = Request::route('user'))
+                        {!! Form::model($model, ['route' => 'user.update']) !!}
+                    @else
+                        {!! Form::model(Auth::user(),['route' => 'user.update']) !!}
+                    @endif
 
-
-                    {!! Form::open(['route' => 'user.update']) !!}
 
                     <div class="form-group row">
                         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Full name') }}</label>
@@ -70,7 +74,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">
                             <button type="submit" class="btn btn-primary">
-                                <i class="fa fa-save"></i> {{ __('Add a new user') }}
+                                <i class="fa fa-save"></i> {{ __('Save') }}
                             </button>
                         </div>
                     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateUser extends FormRequest
@@ -13,7 +14,13 @@ class UpdateUser extends FormRequest
      */
     public function authorize()
     {
-        dd('ok');
+        $routeUser = $this->route('user');
+
+        if($routeUser){
+            if($routeUser->user->accounts()->first()->id !== $this->user()->accounts()->first()->id){
+                return false;
+            }
+        }
 
         return true;
     }
@@ -25,14 +32,18 @@ class UpdateUser extends FormRequest
      */
     public function rules()
     {
-        $rules = [];
-        $rules['name'] = ['required|string|max:255'];
-        $rules['email'] = ['email|max:255'];
+        $rules['name'] = ['required', 'string', 'max:255'];
+        $rules['email'] = ['email', 'max:255'];
 
-        if($this->has('password')){
-            $rules['password'] = ['required|min:8|max:255'];
+        if($this->get('password')){
+            $rules['password'] = ['required', 'min:8', 'max:255'];
+        }
+        // Check for uniqueness of emailaddress when it's updating.
+        $userWeAreEditing = $this->route('user') ?? $this->user();
+        if($userWeAreEditing->email !== $this->get('email')){
+            $rules['email'] = 'unique:users';
         }
 
-
+        return $rules;
     }
 }
