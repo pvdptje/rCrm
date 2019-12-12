@@ -19,9 +19,9 @@ class CreateClientsTable extends Migration
             $table->unsignedBigInteger('account_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
             $table->foreign('account_id')->references('id')->on('accounts');
-            $table->string('name');
             $table->string('email')->unique();
-
+            $table->string('first_name');
+            $table->string('last_name');
             // We want to make these fields optional
             $table->string('street')->nullable();
             $table->string('house_number')->nullable();

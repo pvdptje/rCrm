@@ -11,7 +11,7 @@ class DropDb extends Command
      *
      * @var string
      */
-    protected $signature = 'drop:db';
+    protected $signature = 'db:drop';
 
     /**
      * The console command description.
@@ -41,18 +41,7 @@ class DropDb extends Command
     {
         if(in_array(env('APP_ENV'), ['local', 'staging'])){
             // Using default php mysqli here.
-            $this->link = mysqli_connect(env('DB_HOST'), env('DB_USERNAME'), env('DB_PASSWORD'), env('DB_DATABASE'));
-
-           $this->query( "SET FOREIGN_KEY_CHECKS = 0");
-           $this->query( "SET @tables = NULL");
-           $this->query( sprintf("SELECT GROUP_CONCAT(table_schema, '.', table_name) INTO @tables
-              FROM information_schema.tables 
-              WHERE table_schema = '%s'", env('DB_DATABASE')));
-           $this->query( "SET @tables = CONCAT('DROP TABLE ', @tables)");
-           $this->query( "PREPARE stmt FROM @tables");
-           $this->query( " EXECUTE stmt");
-           $this->query( " DEALLOCATE PREPARE stmt");
-           $this->query( " SET FOREIGN_KEY_CHECKS = 1");
+            $this->doQueries();
 
             $this->info(sprintf('Database %s dropped', env('DB_DATABASE')));
             return;
@@ -66,5 +55,21 @@ class DropDb extends Command
         if(!mysqli_query($this->link, $sql)){
             $this->error($this->link->error);
         }
+    }
+
+    protected function doQueries(): void
+    {
+        $this->link = mysqli_connect(env('DB_HOST'), env('DB_USERNAME'), env('DB_PASSWORD'), env('DB_DATABASE'));
+
+        $this->query("SET FOREIGN_KEY_CHECKS = 0");
+        $this->query("SET @tables = NULL");
+        $this->query(sprintf("SELECT GROUP_CONCAT(table_schema, '.', table_name) INTO @tables
+              FROM information_schema.tables 
+              WHERE table_schema = '%s'", env('DB_DATABASE')));
+        $this->query("SET @tables = CONCAT('DROP TABLE ', @tables)");
+        $this->query("PREPARE stmt FROM @tables");
+        $this->query(" EXECUTE stmt");
+        $this->query(" DEALLOCATE PREPARE stmt");
+        $this->query(" SET FOREIGN_KEY_CHECKS = 1");
     }
 }
