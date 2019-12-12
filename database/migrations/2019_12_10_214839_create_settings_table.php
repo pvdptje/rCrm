@@ -18,7 +18,7 @@ class CreateSettingsTable extends Migration
             $table->string('settingable_type');
             $table->unsignedInteger('settingable_id');
             $table->string('key');
-            $table->text('value');
+            $table->text('value')->nullable();
             $table->timestamps();
         });
     }

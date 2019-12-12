@@ -6819,8 +6819,17 @@ img#main-logo {
   max-width: 130px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .logo-avatar {
   height: 30px;
+}
+
+div.alert-form {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px 15px 5px 15px;
 }
 
 a.action {

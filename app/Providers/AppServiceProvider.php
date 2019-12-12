@@ -17,6 +17,11 @@ class AppServiceProvider extends ServiceProvider
         #db fix
         Schema::defaultStringLength(191);
 
+        #STDIN fix, needed on some local machines.
+/*        if(!defined('STDIN')){
+            define('STDIN',fopen("php://stdin","r"));
+        }*/
+
         #helpers
         require_once app_path('helpers.php');
     }

@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateNewUserForAccount;
-use App\Http\Requests\DestroyUser;
 use App\Http\Requests\UpdateAccount;
 use App\Repositories\BaseRepository;
-use App\User;
+use App\Repositories\OAuthRepository;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 
@@ -40,19 +39,36 @@ class AccountController extends Controller
     }
 
     /**
-     * Display the account index.
+     * @param OAuthRepository $repository
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @throws \App\Exceptions\MustAuthenticateWithOAuth
      */
-    public function index()
+    public function index(OAuthRepository $repository)
     {
         $user    = $this->auth->user();
         $account = $user->accounts()->first();
         $users   = $account->users;
 
+        $oAuth   = $user->oAuth()->where('service', 'google')->first();
+
+        $calendarId = false;
+        $calendarList = [];
+        // it seems this user has an account, check if were connected;
+        if($oAuth){
+            // We should be able to connect, since we have details.
+            $client = $repository->getGoogleClient($user);
+            $calendarService = new \Google_Service_Calendar($client);
+            $calendarId = $user->setting('google_calendar_id');
+            $calendarList = $calendarService->calendarList->listCalendarList();
+        }
+
         $avatar = $this->baseRepository->getUpload($user, 'avatar');
         $logo   = $this->baseRepository->getUpload($account, 'logo');
 
-        return view('account.index', compact('user', 'account', 'users', 'avatar', 'logo'));
+        return view('account.index', compact(
+            'user', 'account', 'users', 'avatar', 'logo', 'oAuth',
+            'calendarId', 'calendarList'
+        ));
     }
 
     /**

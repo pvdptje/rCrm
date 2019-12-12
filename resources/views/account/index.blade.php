@@ -2,6 +2,99 @@
 
 @section('content')
 
+
+    @include('partials.errors')
+    @include('partials.message')
+    <!-- End Page Header -->
+    <!-- Small Stats Blocks -->
+
+    <?php #Not connected to calendar yet, show this alert ?>
+    @if(!$oAuth)
+
+        <div class="row">
+            <div class="col-12 mt-1">
+                <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="col-sm-1 col-3">
+                            <a class="btn btn-md btn-secondary" href="{{ route('oauth.google.redirect') }}">Connect now</a>
+                        </div>
+                        <div class="col-sm-8 col-9">
+                            <strong>{{_('Connect with your Google account to automatically place appointments made here into your calendar.')}}        <i class="fa fa-info mx-2"></i></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    @endif
+
+    <?php #Seems we are connected, but he doesnt have a calendar set up. ?>
+    @if($oAuth && !$calendarId)
+
+        <div class="row">
+            <div class="col-12 mt-1">
+                <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="text-white">{{__('Your Google account is successfully connected.') }}</h5>
+                            <p>
+                                {{__(' However, we don\'t know which calendar to work with. Please select one of your calendars.')}}
+                               <br /> {{__('You can only select calendars for which you have write and read access.')}}
+                            </p>
+                            <div class="alert-form">
+                                {!! Form::open(['route' => 'user.saveSetting']) !!}
+                                    <input type="hidden" name="key" value="google_calendar_id" />
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <select class="form-control" name="value">
+                                                @foreach($calendarList as $calendar)
+                                                    <option @if($calendar->accessRole == 'reader') disabled @endif value="{{$calendar->id}}" >{{ $calendar->id }} {{ $calendar->primary ? __('(Primary)') : '' }} | {{ __('Role') }}: {{ __($calendar->accessRole) }}</option>
+                                                @endforeach
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-secondary"><i class="fa fa-save"></i> {{__('Save calendar')}}</button>
+                                        </div>
+                                    </div>
+                                {!! Form::close() !!}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    @endif
+
+
+    @if($oAuth && $calendarId)
+
+        <div class="row">
+            <div class="col-12 mt-1">
+                <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mb-0">Your Google Calendar is successfully connected. <br />
+                                <span class="text-white">Active calendar:</span> <strong>{{ $calendarId }}</strong><br />
+                                <small>If you wish to change or disconnect the calendar, <a onclick='$("#disconnect-calendar-form").submit()' class="pointer text-white">click here</a></small>
+                            </p>
+                        </div>
+                        {!! Form::open(['route' => 'user.saveSetting', 'id' => 'disconnect-calendar-form']) !!}
+                        <input type="hidden" name="key" value="google_calendar_id" />
+                        <input type="hidden" name="value" value="" />
+                        {!! Form::close() !!}
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+
     <!-- Page Header -->
     <div class="page-header row no-gutters py-4">
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
@@ -9,10 +102,6 @@
             <h3 class="page-title">{{ __('Account') }}</h3>
         </div>
     </div>
-    @include('partials.errors')
-    @include('partials.message')
-    <!-- End Page Header -->
-    <!-- Small Stats Blocks -->
     <div class="row">
         <div class="col-sm-8">
 
@@ -200,6 +289,7 @@
 
         </div>
     </div>
+    <!--
     <div class="page-header row no-gutters py-4">
         <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
             <span class="text-uppercase page-subtitle">{{ __('Users belonging to this account') }}</span>
@@ -253,5 +343,5 @@
             </div>
         </div>
     </div>
-
+    -->
 @endsection

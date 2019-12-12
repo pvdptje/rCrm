@@ -25,7 +25,7 @@ trait UsesSettings
      */
     public function setting($key, $default = null)
     {
-        $setting = $this->settings()->where($key)->first();
+        $setting = $this->settings()->where('key', $key)->first();
 
         return $setting ? $setting->value : null;
     }

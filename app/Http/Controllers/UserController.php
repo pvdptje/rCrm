@@ -2,15 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\UserDeleted;
 use App\Events\UserModified;
 use App\Http\Requests\DestroyUser;
+use App\Http\Requests\SaveSetting;
 use App\Http\Requests\UpdateUser;
 use App\Jobs\SaveUser;
 use App\User;
-use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 
 /**
  * Class UserController
@@ -41,11 +39,26 @@ class UserController extends Controller
             $data['password'] = bcrypt($password);
         }
 
-        $this->dispatch( new SaveUser($user, $data));
+        $this->dispatch( new SaveUser($user, $data) );
 
         event( new UserModified($user, $request->user(), 'update'));
 
         return redirect()->back()->with('message', __('User details updated'));
+    }
+
+
+    public function saveSetting(SaveSetting $request)
+    {
+        $request->user()->saveSetting($request->get('key'), $request->get('value'));
+
+        $message =  __('Setting saved');
+
+        if($request->ajax()){
+            return $message;
+        }
+
+        return redirect()->back()->with('message',  __('Setting saved'));
+
     }
 
     /**

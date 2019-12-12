@@ -53,4 +53,12 @@ class User extends Authenticatable {
         return $this->morphMany(Upload::class, 'uploadable');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function oauth()
+    {
+        return $this->hasMany(OAuth::class);
+    }
+
 }

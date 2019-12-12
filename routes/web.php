@@ -22,13 +22,6 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
     Route::get('/home', function(){
-
-
-        $user = \Illuminate\Support\Facades\Auth::user();
-
-        $user->saveSetting('key', 'value2');
-
-        dd('testing settings');
         return redirect('/account');
     });
 
@@ -44,5 +37,14 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/user/destroy/{user?}', 'UserController@destroy')->name('user.destroy');
 
     Route::post('/upload/{uploadableType}/{selector}', 'UploadController@upload')->name('upload.upload');
+
+    Route::post('/user/saveSetting', 'UserController@saveSetting')->name('user.saveSetting');
+
+    Route::get('/appointments', 'AppointmentController@index')->name('appointment.index');
+    Route::get('/appointment/create', 'AppointmentController@create')->name('appointment.create');
+    Route::post('/appointment/store', 'AppointmentController@store')->name('appointment.store');
+
+    Route::get('/oauth/redirect', 'Auth\OAuthController@redirectToGoogle')->name('oauth.google.redirect');
+    Route::get('/oauth/callback', 'Auth\OAuthController@handleGoogleCallback')->name('oauth.google.callback');
 });
 

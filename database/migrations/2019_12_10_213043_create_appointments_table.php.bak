@@ -13,17 +13,17 @@ class CreateAppointmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('appointments', function (Blueprint $table) {
+       /* Schema::create('appointments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('user_id')->references('id')->on('users');
-            $table->unsignedInteger('client_id')->references('id')->on('clients');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('client_id');
             $table->string('name')->nullable();
             $table->string('location');
             $table->dateTime('event_start');
             $table->dateTime('event_end');
             $table->string('calendar_id')->nullable();
             $table->timestamps();
-        });
+        });*/
     }
 
     /**
@@ -33,6 +33,6 @@ class CreateAppointmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('appointments');
+   //     Schema::dropIfExists('appointments');
     }
 }

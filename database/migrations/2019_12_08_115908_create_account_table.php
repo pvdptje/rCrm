@@ -28,8 +28,10 @@ class CreateAccountTable extends Migration
 
         Schema::create('user_to_account', function (Blueprint $table){
            $table->bigIncrements('id');
-           $table->unsignedInteger('user_id')->references('id')->on('users')->onDelete('cascade');
-           $table->unsignedInteger('account_id')->references('id')->on('account')->onDelete('cascade');
+           $table->unsignedBigInteger('user_id');
+           $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+           $table->unsignedBigInteger('account_id');
+           $table->foreign('account_id')->references('id')->on('accounts')->onDelete('cascade');
         });
     }
 

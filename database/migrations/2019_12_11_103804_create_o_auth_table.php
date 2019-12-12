@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Test extends Migration
+class CreateOAuthTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,13 @@ class Test extends Migration
      */
     public function up()
     {
-        Schema::create('test', function (Blueprint $table) {
+        Schema::create('oauth', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('user_id');
+            $table->string('service');
+            $table->text('token');
+            $table->string('refresh_token')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -25,6 +30,6 @@ class Test extends Migration
      */
     public function down()
     {
-        Schema::drop('test');
+        Schema::dropIfExists('oauth');
     }
 }
