@@ -34,13 +34,15 @@ class UserModified
     public $action;
 
     /**
-     * Create a new event instance.
-     *
-     * @return void
+     * UserModified constructor.
+     * @param User $victim
+     * @param User $user
+     * @param $action
      */
     public function __construct(User $victim, User $user, $action)
     {
         $this->victim = $victim;
         $this->user = $user;
+        $this->action = $action;
     }
 }

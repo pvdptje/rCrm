@@ -35,5 +35,11 @@ class Account extends Model
         return $this->morphMany(Upload::class, 'uploadable');
     }
 
-
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function clients()
+    {
+        return $this->hasMany(Client::class);
+    }
 }

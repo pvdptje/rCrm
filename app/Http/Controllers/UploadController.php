@@ -64,7 +64,11 @@ class UploadController extends Controller
         if (!isset($this->uploadableTypes[$uploadableType])){
             throw new \Exception('Invalid uploadable type');
         }
-
+        /**
+         * if this grows in future version
+         * make a factory class which provides us with the
+         * appropriate uploadable
+         */
         switch ($uploadableType){
             case 'user':
                 $uploadable = $this
@@ -75,24 +79,21 @@ class UploadController extends Controller
                 $uploadable = $this
                     ->auth
                     ->user()
-                    ->accounts
-                    ->first();
+                    ->account;
                 break;
             case 'client':
                 $uploadable = $this->uploadableTypes[$uploadableType]::where('id', $request->get('client_id'))->where('account_id', $this
                     ->auth
                     ->user()
-                    ->accounts()
-                    ->first()
+                    ->account
                     ->id);
-                break;
         }
 
         $fileUrl = $this->uploader->setUploadable($uploadable)
             ->setUploadedFile($request->file($selector))
             ->store($selector, $request->get('overwrite'));
 
-        event( new NewFileUploaded($this->uploader->getUpload(), $selector)); #Throw an event so we can do something with the file if necessary later on.
+        event( new NewFileUploaded($this->uploader->getUpload(), $selector)); #Throw an event so we can do something with the file if necessary later on. (image cropping etc).
 
         return $fileUrl;
     }

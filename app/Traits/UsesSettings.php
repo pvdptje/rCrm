@@ -27,7 +27,7 @@ trait UsesSettings
     {
         $setting = $this->settings()->where('key', $key)->first();
 
-        return $setting ? $setting->value : null;
+        return $setting ? $setting->value : $default;
     }
 
     /**
@@ -41,5 +41,4 @@ trait UsesSettings
 
         return $setting ? $setting->update(['value' => $value]) : $this->settings()->create(['key' => $key, 'value' => $value]);
     }
-
 }

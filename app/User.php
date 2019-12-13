@@ -61,4 +61,13 @@ class User extends Authenticatable {
         return $this->hasMany(OAuth::class);
     }
 
+    /**
+     * @return Account | null
+     */
+    public function getAccountAttribute()
+    {
+        return $this->accounts()->first();
+    }
+
+
 }

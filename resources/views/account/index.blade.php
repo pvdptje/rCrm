@@ -202,7 +202,6 @@
                         </div>
                         <div class="form-group row">
                             <label for="province" class="col-md-4 col-form-label text-md-right">{{ __('Province') }}</label>
-
                             <div class="col-md-6">
                                 {!! Form::select('province',get_provinces(), null, ['class' => 'form-control']) !!}
 
@@ -247,7 +246,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    {!! Form::close() !!}
                 </div>
             </div>
 

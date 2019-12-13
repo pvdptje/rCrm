@@ -24,6 +24,7 @@ class CreateClientsTable extends Migration
             $table->string('last_name');
             // We want to make these fields optional
             $table->string('street')->nullable();
+            $table->date('date_of_birth')->nullable();
             $table->string('house_number')->nullable();
             $table->string('postcode')->nullable();
             $table->string('province')->nullable();

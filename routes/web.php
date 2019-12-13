@@ -18,7 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 
-Route::group(['middleware' => 'auth'], function(){
+Route::group(['middleware' => ['set.locale', 'auth']], function(){
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
     Route::get('/home', function(){
@@ -46,6 +46,9 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/client/create', 'ClientController@create')->name('client.create');
     Route::post('/client/store', 'ClientController@store')->name('client.store');
 
+
+
+    Route::post('/action/{actionNamespace}/{actionName}', 'ActionController@handle')->name('action.handle');
 
 
 
