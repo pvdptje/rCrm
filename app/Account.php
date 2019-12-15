@@ -21,6 +21,11 @@ class Account extends Model
     ];
 
     /**
+     * @var array
+     */
+    protected $appends = ['logo'];
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function users()
@@ -42,4 +47,19 @@ class Account extends Model
     {
         return $this->hasMany(Client::class);
     }
+
+    /**
+     * @return bool|string
+     */
+    public function getLogoAttribute()
+    {
+        $upload = $this->uploads()->where('selector', 'logo')->orderBy('created_at', 'desc')->first();
+        if($upload){
+            return asset($upload->path);
+        }
+
+        return false;
+    }
+
+
 }

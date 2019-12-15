@@ -11,6 +11,7 @@ use App\Account;
 use App\Client;
 use App\Upload;
 use App\User;
+use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\UploadedFile;
 
@@ -25,6 +26,12 @@ class Uploader
      */
     protected $upload;
 
+
+    /**
+     * @var Filesystem
+     */
+    protected $filesystem;
+
     /**
      * @return Upload
      */
@@ -37,9 +44,10 @@ class Uploader
      * Uploader constructor.
      * @param Upload $upload
      */
-    public function __construct(Upload $upload)
+    public function __construct(Upload $upload, Filesystem $filesystem)
     {
         $this->upload = $upload;
+        $this->filesystem = $filesystem;
     }
 
     /**
@@ -64,10 +72,10 @@ class Uploader
     }
 
     /**
-     * @param UploadedFile $file
+     * @param UploadedFile | string $file
      * @return $this
      */
-    public function setUploadedFile(UploadedFile $file)
+    public function setUploadedFile($file)
     {
         $this->uploadedFile = $file;
 
@@ -85,12 +93,69 @@ class Uploader
         $uploadDir = 'uploads/'.md5(get_class($this->uploadable));
         $id = $this->uploadable->id;
 
-        $fileName = $this->uploadedFile->getClientOriginalName();
-        if(!$overwrite){ // If we do not want to overwrite, we make a prefix
-            $fileName = uniqid('rcrm_').mt_rand(0,10).$fileName;
+        if(is_string($this->uploadedFile))
+            return $this->storeImageUpload($selector, $overwrite, $uploadDir, $id);
+
+        return $this->storeRegularUpload($selector, $overwrite, $uploadDir, $id);
+    }
+
+    /**
+     * @param $selector
+     * @param $overwrite
+     * @param $uploadDir
+     * @param $id
+     * @return string
+     * @throws \Exception
+     */
+    private function storeImageUpload($selector, $overwrite, $uploadDir, $id): string
+    {
+        $fileName = $selector.".png"; // ez life always png.
+
+        if (!$overwrite) { // If we do not want to overwrite, we make a prefix
+            $fileName = uniqid('rcrm_') . mt_rand(0, 10) . $fileName;
         }
 
-        $path = $uploadDir.'/'.$id.'/'.$fileName;
+        $path = $this->getRelativePath($uploadDir, $id, $fileName);
+
+        $uploadData = [
+            'path' => $path,
+            'selector' => $selector,
+            'name' => $selector,
+            'original_name' => $selector,
+            'uploadable_id' => $this->uploadable->id,
+            'uploadable_type' => get_class($this->uploadable)
+        ];
+
+        $this->updateOrCreateUpload($selector, $overwrite, $uploadData);
+
+        if(!is_dir($dir = str_replace($fileName,'',  public_path($path)))){
+            mkdir($dir, 0777);
+        }
+
+        $data = explode(',', $this->uploadedFile);
+        if(!file_put_contents(public_path($path), base64_decode($data[1])))
+            throw new \Exception('Can\'t upload image:' . $path);
+
+        return asset($path);
+    }
+
+
+    /**
+     * @param $selector
+     * @param $overwrite
+     * @param $uploadDir
+     * @param $id
+     * @return string
+     */
+    private function storeRegularUpload($selector, $overwrite, $uploadDir, $id): string
+    {
+        $fileName = $this->uploadedFile->getClientOriginalName();
+
+        if (!$overwrite) { // If we do not want to overwrite, we make a prefix
+            $fileName = uniqid('rcrm_') . mt_rand(0, 10) . $fileName;
+        }
+
+        $path = $this->getRelativePath($uploadDir, $id, $fileName);
 
         $uploadData = [
             'path' => $path,
@@ -101,15 +166,32 @@ class Uploader
             'uploadable_type' => get_class($this->uploadable)
         ];
 
+        $this->updateOrCreateUpload($selector, $overwrite, $uploadData);
+
+        $this->uploadedFile->move(
+            public_path($uploadDir . '/' . $id),
+            $fileName
+        );
+
+        return asset($path);
+    }
+
+    /**
+     * @param $selector
+     * @param $overwrite
+     * @param $uploadData
+     */
+    private function updateOrCreateUpload($selector, $overwrite, $uploadData)
+    {
         $method = 'create';
-        if($overwrite){
+        if ($overwrite) {
             $oldModel = $this->upload->newQuery()->where('uploadable_id', $this->uploadable->id)
-            ->where('uploadable_type', get_class($this->uploadable))
-            ->where('selector', $selector)
-            ->first();
+                ->where('uploadable_type', get_class($this->uploadable))
+                ->where('selector', $selector)
+                ->first();
 
 
-            if($oldModel){
+            if ($oldModel) {
                 @unlink(public_path($oldModel->path));
                 $this->upload = $oldModel;
                 $method = 'update';
@@ -117,13 +199,19 @@ class Uploader
         }
 
         $this->upload->$method($uploadData);
+    }
 
-        $this->uploadedFile->move(
-            public_path($uploadDir.'/'.$id),
-            $fileName
-        );
+    /**
+     * @param $uploadDir
+     * @param $id
+     * @param $fileName
+     * @return string
+     */
+    private function getRelativePath($uploadDir, $id, $fileName): string
+    {
+        $path = $uploadDir . '/' . $id . '/' . $fileName;
 
-        return asset($uploadDir.'/'.$id.'/'.$fileName);
+        return $path;
     }
 
 }

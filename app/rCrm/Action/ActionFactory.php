@@ -8,7 +8,6 @@
 namespace App\rCrm\Action;
 use App\rCrm\Action\Exceptions\ActionException;
 use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 
@@ -101,38 +100,40 @@ class ActionFactory
         $this->actionClass = $this->app->make($this->actions[$this->namespace][$this->actionName]);
     }
 
+    /**
+     * @param $ids
+     * @param Request $request
+     * @return mixed
+     */
+    private function getModels($ids, Request $request)
+    {
+        $modelName = $request->get('actionModel');
+
+        return $modelName::whereIn('id', $ids)->get();
+    }
+
+    /**
+     * @param Request $request
+     * @throws \Illuminate\Validation\ValidationException
+     */
     private function performActions(Request $request)
     {
-        $this->getModelIds($request)->each(function($id) use($request){
+        $this->performActionValidation($request);
 
-            $model = $this->getModelFromRequest($id, $request);
+        $this->actionClass->before(
+            $models = $this->getModels(
+                $this->getModelIds($request),
+                $request),
+            $request
+        );
 
-            if(method_exists($this->actionClass, 'rules')){
-                $this->validate($request, $this->actionClass->rules(),
-                method_exists($this->actionClass, 'messages') ? $this->actionClass->messages() : [],
-                    method_exists($this->actionClass, 'attributes') ? $this->actionClass->attributes() : []
-                );
-            }
-
-            $this->actionClass->before($model, $request);
+        $models->each(function($model) use ($request){
             $this->actionClass->handle($model, $request);
 
             if(method_exists($this->actionClass, 'after')){
                 $this->actionClass->after($model, $request);
             }
         });
-    }
-
-    /**
-     * @param int $id
-     * @param Request $request
-     * @return Model
-     */
-    private function getModelFromRequest($id, Request $request)
-    {
-        $modelName = $request->get('actionModel');
-
-        return $modelName::findOrFail($id);
     }
 
     /**
@@ -191,6 +192,20 @@ class ActionFactory
                 }
             ]
         ]);
+    }
+
+    /**
+     * @param Request $request
+     * @throws \Illuminate\Validation\ValidationException
+     */
+    private function performActionValidation(Request $request)
+    {
+        if (method_exists($this->actionClass, 'rules')) {
+            $this->validate($request, $this->actionClass->rules(),
+                method_exists($this->actionClass, 'messages') ? $this->actionClass->messages() : [],
+                method_exists($this->actionClass, 'attributes') ? $this->actionClass->attributes() : []
+            );
+        }
     }
 
 }

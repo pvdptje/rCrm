@@ -18,6 +18,7 @@ class CreateAccountTable extends Migration
             $table->string('company_name');
             $table->string('street');
             $table->string('house_number');
+            $table->string('phone')->nullable();
             $table->string('postcode');
             $table->string('province');
             $table->string('city');

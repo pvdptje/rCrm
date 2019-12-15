@@ -6,6 +6,7 @@
  */
 
 namespace App\rCrm\Action;
+use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
@@ -24,10 +25,9 @@ interface ActionInterface
     public function handle(Model $model, Request $request);
 
     /**
-     * Do something before the action on the model starts.
-     * @param Model $model
+     * @param Collection $models
      * @param Request $request
      * @return mixed
      */
-    public function before(Model $model, Request $request);
+    public function before(Collection $models, Request $request);
 }

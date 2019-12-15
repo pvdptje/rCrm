@@ -12,11 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
 
 Auth::routes();
 
+
+Route::get('/test', function(){
+   return inertia('Test');
+});
 
 Route::group(['middleware' => ['set.locale', 'auth']], function(){
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

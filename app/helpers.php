@@ -19,3 +19,14 @@ if(!function_exists('get_provinces')){
         ];
     }
 }
+
+if(!function_exists('get_translation_file_contents')){
+    function get_translation_file_contents($path): stdClass
+    {
+        if(file_exists($path)){
+            return json_decode(file_get_contents($path));
+        }
+
+        return new stdClass();
+    }
+}

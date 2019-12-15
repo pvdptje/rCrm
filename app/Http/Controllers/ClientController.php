@@ -31,7 +31,13 @@ class ClientController extends Controller
      */
     public function create()
     {
-        return view('client.form');
+        return inertia('Client/Create', [
+            'title' => __('Add a new client'),
+            'breadcrumbs' => [
+                ['/' => __('Home')],
+                ['/clients' => __('Clients')]
+            ]
+        ]);
     }
 
     /**

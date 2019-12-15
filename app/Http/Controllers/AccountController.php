@@ -65,8 +65,8 @@ class AccountController extends Controller
         $avatar = $this->baseRepository->getUpload($user, 'avatar');
         $logo   = $this->baseRepository->getUpload($account, 'logo');
 
-        return view('account.index', compact(
-            'user', 'account', 'users', 'avatar', 'logo', 'oAuth',
+        return inertia('Account/Index', compact(
+            'user', 'account', 'users', 'avatar', 'oAuth',
             'calendarId', 'calendarList'
         ));
     }
@@ -80,11 +80,11 @@ class AccountController extends Controller
         $this->dispatch(
             new UpdateAccountJob(
                 $this->auth->user()->accounts()->first(),
-                $request->only(['company_name', 'invoice_email', 'street', 'house_number', 'postcode', 'province', 'city', 'country']
+                $request->only(['company_name', 'invoice_email', 'phone', 'street', 'house_number', 'postcode', 'province', 'city', 'country']
                 )
         ));
 
-        return redirect()->back()->with('message', __('Account details updated'));
+        return redirect()->back()->with('success', __('Account details updated'));
     }
 
     /**
@@ -106,7 +106,7 @@ class AccountController extends Controller
             $request->only('name', 'email', 'password')
         ));
 
-        return redirect()->route('account.index')->with('message', __('User added to account'));
+        return redirect()->route('account.index')->with('success', __('User added to account'));
     }
 
 

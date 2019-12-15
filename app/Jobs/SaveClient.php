@@ -48,9 +48,9 @@ class SaveClient
      */
     public function handle()
     {
-        $this->client->create(array_merge($this->variables, [
-            'user_id ' => $this->user->id,
+        $this->client->create(array_merge([
+            'user_id' => $this->user->id,
             'account_id' => $this->user->account->id
-        ]));
+        ],$this->variables));
     }
 }

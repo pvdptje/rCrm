@@ -90,12 +90,12 @@ class UploadController extends Controller
         }
 
         $fileUrl = $this->uploader->setUploadable($uploadable)
-            ->setUploadedFile($request->file($selector))
+            ->setUploadedFile($request->file($selector, $request->get($selector)))
             ->store($selector, $request->get('overwrite'));
 
         event( new NewFileUploaded($this->uploader->getUpload(), $selector)); #Throw an event so we can do something with the file if necessary later on. (image cropping etc).
 
-        return $fileUrl;
+        return redirect()->back()->with('success', __('File uploaded.'));
     }
 }
 

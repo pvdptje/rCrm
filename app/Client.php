@@ -29,6 +29,7 @@ class Client extends Model
         'user_id'
     ];
 
+
     /**
      * @return string
      */

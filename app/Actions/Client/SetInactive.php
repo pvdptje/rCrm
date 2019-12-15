@@ -8,11 +8,11 @@
 namespace App\Actions\Client;
 
 use App\rCrm\Action\Action;
-use App\rCrm\Action\ActionInterface;
-use App\rCrm\Action\Exceptions\IllegalActionException;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
-use \Exception;
+use Illuminate\Support\Collection;
+use App\rCrm\Action\ActionInterface;
+use Illuminate\Database\Eloquent\Model;
+use App\rCrm\Action\Exceptions\IllegalActionException;
 
 /**
  * Class SetInactive
@@ -21,21 +21,23 @@ use \Exception;
 class SetInactive extends Action implements ActionInterface
 {
     /**
-     * @param Model $model
+     * @param Collection $models
      * @param Request $request
      * @return bool|mixed
-     * @throws IllegalActionException
      */
-    public function before(Model $model, Request $request)
+    public function before(Collection $models, Request $request)
     {
-        if($model->user_id !== $request->user()->id){
-            throw new IllegalActionException('Client does not belong to this user');
-        }
+        $models->each(function($model) use ($request){
+            if($model->user_id !== $request->user()->id){
+                throw new IllegalActionException('Client does not belong to this user');
+            }
+        });
 
         return true;
     }
 
     /**
+     * Perform an action on a single model
      * @param Model $model
      * @param Request $request
      * @return mixed|void
