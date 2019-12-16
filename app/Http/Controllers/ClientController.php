@@ -44,9 +44,9 @@ class ClientController extends Controller
      * @param SaveClientRequest $request
      * @return RedirectResponse
      */
-    public function store(SaveClientRequest $request)
+    public function store(SaveClientRequest $request, Client $client)
     {
-        $this->dispatch(new Job($user = $request->user(), $client = new Client(),
+        $this->dispatch(new Job($user = $request->user(),
             $request->only($client->getFillable())
         ));
 

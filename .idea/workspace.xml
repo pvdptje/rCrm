@@ -7,193 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53bb0353-0239-4ab7-9767-75b2468f8f3f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/css/iconfont.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/css/loader.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/css/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/fonts/feather.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/fonts/feather.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/fonts/feather.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/fonts/feather.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/ag-grid/checkbox-checked-readonly.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/ag-grid/checkbox-checked.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/ag-grid/checkbox-indeterminate-readonly.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/ag-grid/checkbox-indeterminate.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/ag-grid/dark-asc.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/ag-grid/dark-checkbox-unchecked.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/ag-grid/dark-desc.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/ag-grid/dark-filter.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/logo/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/logo/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/logo/logo_xs_png.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/pages/404.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/pages/login.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/pages/login/facebook.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/pages/login/github.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/pages/login/google.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/pages/login/twitter.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/pages/vuesax-login-bg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/portrait/small/avatar-s-11.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/raty/star-half-2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/images/raty/star-on-2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/utils/color.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/utils/easing.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/utils/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/assets/utils/theme.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/Pages/Auth/Login.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/Pages/Client/Create.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/Pages/Test.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/components/ChangeTimeDurationDropdown.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/components/FeatherIcon.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/components/VxTour.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/components/statistics-cards/StatisticsCardLine.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/components/vx-auto-suggest/VxAutoSuggest.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/components/vx-card/VxCard.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/components/vx-input-group/VxInputGroup.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/components/vx-list/VxList.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/filters/filters.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/globalComponents.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/FullPage.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/Layout.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/TheFooter.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/TheNavbar.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/VxBreadcrumb.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/customizer/TheCustomizer.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/navbarSearchAndPinList.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebar.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebarGroup.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebarItem.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/sidebarItems.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-tooltip/VxTooltip.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/store/actions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/store/getters.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/store/mutations.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/store/state.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/store/store.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/translations.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/themeConfig.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/main.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/tailwind.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_customClasses.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_extraComponents.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_fixesVuesax.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_layout.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_misc.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_routerAnimations.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_tailwindFix.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_themes.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_transitions.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_typography.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/apps/calendar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/apps/chat.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/apps/email.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/apps/simple-calendar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/apps/todo.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/components/featherIcon.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/components/vxAutoSuggest.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/components/vxCard.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/components/vxInputGroup.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/components/vxList.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/components/vxSidebar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/components/vxSidebarGroup.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/_charts.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/_contextMenu.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/_datePicker.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/_datetimePicker.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/_formWizard.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/_quillEditor.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/_vueSelect.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/agGridStyleOverride.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/autocomplete.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/extraComponents/tree.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/layout/_footer.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/layout/_layoutCommon.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/layout/_layoutModern.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/layout/_theNavbar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/pages/colors.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/pages/dropdown.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/pages/grid.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/pages/loading.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/pages/profile.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/pages/search.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/pages/sidebar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/pages/switch.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/themes/_themeDark.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/sass/vuesax/themes/_themeSemiDark.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tailwind.js" />
+      <change beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/.env.example" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Account.php" afterPath="$PROJECT_DIR$/app/Account.php" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Client/SetInactive.php" afterPath="$PROJECT_DIR$/app/Actions/Client/SetInactive.php" />
-      <change beforePath="$PROJECT_DIR$/app/Client.php" afterPath="$PROJECT_DIR$/app/Client.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UploadController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UploadController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ValidateImageUpload.php" afterPath="$PROJECT_DIR$/app/Http/Requests/ValidateImageUpload.php" />
       <change beforePath="$PROJECT_DIR$/app/Jobs/SaveClient.php" afterPath="$PROJECT_DIR$/app/Jobs/SaveClient.php" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" afterPath="$PROJECT_DIR$/app/helpers.php" />
-      <change beforePath="$PROJECT_DIR$/app/rCrm/Action/ActionFactory.php" afterPath="$PROJECT_DIR$/app/rCrm/Action/ActionFactory.php" />
-      <change beforePath="$PROJECT_DIR$/app/rCrm/Action/ActionInterface.php" afterPath="$PROJECT_DIR$/app/rCrm/Action/ActionInterface.php" />
-      <change beforePath="$PROJECT_DIR$/app/rCrm/Uploader.php" afterPath="$PROJECT_DIR$/app/rCrm/Uploader.php" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_08_115908_create_account_table.php" afterPath="$PROJECT_DIR$/database/migrations/2019_12_08_115908_create_account_table.php" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" afterPath="$PROJECT_DIR$/public/mix-manifest.json" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" afterPath="$PROJECT_DIR$/resources/js/app.js" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_alert.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_badge.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_button-group.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_buttons.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_card.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_custom-forms.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_custom-sliders.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_dropdown.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_icons.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_images.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_input-group.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_list-group.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_navbar.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_overrides.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_reboot.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_utilities.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/accent-variations/danger.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/accent-variations/info.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/accent-variations/secondary.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/accent-variations/success.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/accent-variations/warning.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" afterPath="$PROJECT_DIR$/resources/sass/app.scss" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/blocks/_main-content.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/blocks/_main-footer.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/blocks/_main-navbar.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/blocks/_main-sidebar.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/blocks/_page-header.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/_card-post.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/_error.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/custom/account.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/custom/app.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/plugins/_quill.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/shards-dashboards.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/templates/_blog-add-new-post.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/templates/_blog-overview.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/templates/_common.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/utilities/_borders.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/utilities/_general.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/utilities/_text.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" afterPath="$PROJECT_DIR$/webpack.mix.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -214,21 +31,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AccountController.php">
+      <file leaf-file-name="ClientController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allowed_settings.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/allowed_settings.php">
+      <file leaf-file-name="SaveClient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Jobs/SaveClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="392">
+              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env.example" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env.example">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="47" column="31" lean-forward="false" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AccountController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="91" column="7" lean-forward="true" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -260,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/resources/js/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="70">
-              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+              <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
               <folding>
                 <element signature="e#758#784#0" expanded="true" />
               </folding>
@@ -268,21 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserTableSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="143" column="24" lean-forward="true" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
               <folding>
                 <element signature="e#6932#6970#0" expanded="true" />
               </folding>
@@ -336,8 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Jobs/SaveClient.php" />
-        <option value="$PROJECT_DIR$/app/rCrm/Action/ActionFactory.php" />
         <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/resources/js/Pages/Client/Create.vue" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
@@ -359,7 +194,6 @@
         <option value="$PROJECT_DIR$/resources/js/src/layouts/main/Test.vue" />
         <option value="$PROJECT_DIR$/resources/js/src/Pages/Test.vue" />
         <option value="$PROJECT_DIR$/resources/js/src/layouts/components/VxBreadcrumb.vue" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" />
         <option value="$PROJECT_DIR$/resources/js/src/Pages/Client/Create.vue" />
         <option value="C:/testv/resources/js/themeConfig.js" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
@@ -387,6 +221,9 @@
         <option value="$PROJECT_DIR$/resources/js/src/translations.js" />
         <option value="$PROJECT_DIR$/resources/js/src/main.js" />
         <option value="$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ClientController.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/SaveClient.php" />
+        <option value="$PROJECT_DIR$/.env.example" />
       </list>
     </option>
   </component>
@@ -439,6 +276,19 @@
               <item name="rCrm.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="rCrm.io" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="rCrm.io" type="b2602c69:ProjectViewProjectNode" />
@@ -567,12 +417,12 @@
       <workItem from="1575927554232" duration="1559000" />
       <workItem from="1576001491986" duration="23582000" />
       <workItem from="1576099516971" duration="49952000" />
-      <workItem from="1576322431096" duration="48252000" />
+      <workItem from="1576322431096" duration="49730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175017000" />
+    <option name="totallyTimeSpent" value="176495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -643,38 +493,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/sass/bootstrap/mixins/_grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/VJS-An-32/VUESAX V3.2 - VUEJS + HTML ADMIN DASHBOARD TEMPLATE/vuesax-admin-v3.2/vuesax-html-admin-template/vuesax-html-admin-template/vuesax-html-admin-template/src/scss/bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/VJS-An-32/VUESAX V3.2 - VUEJS + HTML ADMIN DASHBOARD TEMPLATE/vuesax-admin-v3.2/vuesax-html-admin-template/vuesax-html-admin-template/vuesax-html-admin-template/gulp-tasks/sass/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/components.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-213">
@@ -1116,18 +934,20 @@
     <entry file="file://$PROJECT_DIR$/resources/js/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
-          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
           <folding>
             <element signature="e#758#784#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AccountController.php">
+    <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="143" column="24" lean-forward="true" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
+          <folding>
+            <element signature="e#6932#6970#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1139,13 +959,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AccountController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="e#6932#6970#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="528">
+          <caret line="91" column="7" lean-forward="true" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/SaveClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="47" column="31" lean-forward="false" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -20,11 +20,6 @@ class SaveClient
     protected $user;
 
     /**
-     * @var Client
-     */
-    protected $client;
-
-    /**
      * @var
      */
     protected $variables;
@@ -34,10 +29,9 @@ class SaveClient
      *
      * @return void
      */
-    public function __construct(User $user, Client $client, $variables)
+    public function __construct(User $user, $variables)
     {
         $this->user = $user;
-        $this->client = $client;
         $this->variables = $variables;
     }
 
@@ -48,8 +42,7 @@ class SaveClient
      */
     public function handle()
     {
-        $this->client->create(array_merge([
-            'user_id' => $this->user->id,
+        $this->user->clients()->create(array_merge([
             'account_id' => $this->user->account->id
         ],$this->variables));
     }
