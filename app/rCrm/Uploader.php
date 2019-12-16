@@ -129,7 +129,7 @@ class Uploader
         $this->updateOrCreateUpload($selector, $overwrite, $uploadData);
 
         if(!is_dir($dir = str_replace($fileName,'',  public_path($path)))){
-            mkdir($dir, 0777);
+            mkdir($dir, 0777, true);
         }
 
         $data = explode(',', $this->uploadedFile);

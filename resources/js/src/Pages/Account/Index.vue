@@ -1,16 +1,16 @@
 <template>
-    <Layout title="Account" v-bind:breadcrumbs="breadcrumbs">
+    <Layout :title="__('Account')" v-bind:breadcrumbs="breadcrumbs">
 
       <div class="vx-row">
 
           <div class="vx-col w-full sm:w-3/4 mb-base">
 
-              <vx-card title="Bedrijfsgegevens" subtitle="Kijk ze na, of wijzig indien nodig.">
+              <vx-card title="Bedrijfsgegevens" :subtitle="__('Review them, or change if necessary.')">
 
                   <form @submit.prevent="saveCompanyDetails">
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>Bedrijfsnaam</span>
+                          <span>{{ __('Company name') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" v-model="companyForm.company_name" :danger="$page.errors.company_name" :text-danger="$page.errors.company_name ? $page.errors.company_name[0] : ''" />
@@ -18,7 +18,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>E-mailadres</span>
+                          <span>{{ __('Email name') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" type="email" v-model="companyForm.invoice_email" />
@@ -26,7 +26,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>Telefoonnummer</span>
+                          <span>{{ __('Phone') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" v-model="companyForm.phone" />
@@ -34,7 +34,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>Straat</span>
+                          <span>{{ __('Straat ') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" v-model="companyForm.street" />
@@ -82,7 +82,7 @@
                   </div>
                   <div class="vx-row">
                       <div class="vx-col sm:w-2/3 w-full ml-auto">
-                          <vs-button class="mr-3 mb-2">Opslaan</vs-button>
+                          <vs-button class="mr-3 mb-2">{{ __('Save') }}</vs-button>
                       </div>
                   </div>
                   </form>
@@ -102,7 +102,7 @@
                   <vs-input id="logoInput" type="file" @change="onLogoChange" style="display:none"></vs-input>
 
                   <vs-alert v-if="uploadError" ref="alert"  color="danger" class="mb-6" title="Fout!" active="true">
-                      Upload een afbeelding aub.
+                      {{ __('Please, upload an image') }}
                   </vs-alert>
 
                   <vs-alert v-if="$page.errors.logo" ref="alert"  color="danger" class="mb-6" title="Fout!" active="true">
@@ -125,14 +125,14 @@
                                      role="button"
                                      color="secondary"
                                      @click.prevent="zoom(0.2)"
-                          >Zoom in</vs-button>
+                          >{{__('Zoom in')}}</vs-button>
                           <vs-button
                                      class="inline-block"
                                      role="button"
                                      color="secondary"
                                      size="small"
                                      @click.prevent="zoom(-0.2)"
-                          >Zoom uit</vs-button>
+                          >{{__('Zoom out')}}</vs-button>
 
                           <vs-button
                                   class="inline-block"
@@ -140,12 +140,12 @@
                                   color="primary"
                                   size="small"
                                   @click.prevent="storeCompanyLogo"
-                          >Opslaan</vs-button>
+                          >{{ __('Save') }}</vs-button>
                       </div>
 
 
                       <p class="mt-1">
-                          Zorg dat je logo zo goed mogelijk in de aangegeven verhouding past voor het beste resultaat.
+                          {{ __('Make sure that your logo fits the indicated ratio for the best result.') }}
                       </p>
                   </div>
 

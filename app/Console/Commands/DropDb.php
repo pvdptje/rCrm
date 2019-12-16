@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Schema;
 
 class DropDb extends Command
 {
@@ -59,6 +60,9 @@ class DropDb extends Command
 
     protected function doQueries(): void
     {
+
+        Schema::getConnection()->getDoctrineSchemaManager()->dropDatabase(env('DB_DATABASE'));
+/*
         $this->link = mysqli_connect(env('DB_HOST'), env('DB_USERNAME'), env('DB_PASSWORD'), env('DB_DATABASE'));
 
         $this->query("SET FOREIGN_KEY_CHECKS = 0");
@@ -70,6 +74,6 @@ class DropDb extends Command
         $this->query("PREPARE stmt FROM @tables");
         $this->query(" EXECUTE stmt");
         $this->query(" DEALLOCATE PREPARE stmt");
-        $this->query(" SET FOREIGN_KEY_CHECKS = 1");
+        $this->query(" SET FOREIGN_KEY_CHECKS = 1");*/
     }
 }

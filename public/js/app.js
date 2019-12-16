@@ -48543,17 +48543,17 @@ __webpack_require__.r(__webpack_exports__);
 var map = {
 	"./Account/Index": [
 		"./resources/js/src/Pages/Account/Index.vue",
-		7,
+		1,
+		6,
 		0,
-		3,
-		6
+		3
 	],
 	"./Account/Index.vue": [
 		"./resources/js/src/Pages/Account/Index.vue",
-		7,
+		1,
+		6,
 		0,
-		3,
-		6
+		3
 	],
 	"./Auth/Login": [
 		"./resources/js/src/Pages/Auth/Login.vue",
@@ -48565,26 +48565,26 @@ var map = {
 	],
 	"./Client/Create": [
 		"./resources/js/src/Pages/Client/Create.vue",
-		7,
-		3,
+		1,
+		0,
 		4
 	],
 	"./Client/Create.vue": [
 		"./resources/js/src/Pages/Client/Create.vue",
-		7,
-		3,
+		1,
+		0,
 		4
 	],
 	"./Test": [
 		"./resources/js/src/Pages/Test.vue",
-		7,
-		3,
+		1,
+		0,
 		5
 	],
 	"./Test.vue": [
 		"./resources/js/src/Pages/Test.vue",
-		7,
-		3,
+		1,
+		0,
 		5
 	]
 };
@@ -49745,9 +49745,9 @@ var themeConfig = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\assets\css\main.css */"./resources/assets/css/main.css");
+__webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\assets\css\main.css */"./resources/assets/css/main.css");
 
 
 /***/ })
