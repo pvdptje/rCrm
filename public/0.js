@@ -1343,6 +1343,10 @@ __webpack_require__.r(__webpack_exports__);
       "default": '#',
       type: String
     },
+    routeName: {
+      "default": '',
+      type: String
+    },
     to: {
       "default": null,
       type: String
@@ -1369,20 +1373,13 @@ __webpack_require__.r(__webpack_exports__);
       activeLink: false
     };
   },
-  watch: {
-    '$route': function $route() {
-      this.CheckIsActive();
-    }
-  },
   methods: {
-    CheckIsActive: function CheckIsActive() {
-      if (this.to) {
-        return false;
-      }
+    checkIsActive: function checkIsActive() {
+      return this.routeName === this.$page.currentRouteName;
     }
   },
   updated: function updated() {
-    this.CheckIsActive();
+    this.checkIsActive();
   }
 });
 
@@ -2888,10 +2885,8 @@ var render = function() {
                                         sidebarItem.slug != "external"
                                           ? sidebarItem.url
                                           : "",
-                                      href:
-                                        sidebarItem.slug == "external"
-                                          ? sidebarItem.url
-                                          : "",
+                                      routeName: sidebarItem.route,
+                                      href: sidebarItem.href,
                                       icon: sidebarItem.icon,
                                       target: sidebarItem.target,
                                       isDisabled: sidebarItem.isDisabled
@@ -3163,13 +3158,13 @@ var render = function() {
     {
       staticClass: "vs-sidebar--item",
       class: [
-        { "vs-sidebar-item-active": _vm.activeLink },
+        { "vs-sidebar-item-active": _vm.checkIsActive() },
         { "disabled-item pointer-events-none": _vm.isDisabled }
       ]
     },
     [
       _c(
-        "a",
+        "inertia-link",
         { attrs: { target: _vm.target, href: _vm.href } },
         [
           !_vm.featherIcon
@@ -3185,7 +3180,8 @@ var render = function() {
         ],
         2
       )
-    ]
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -3765,20 +3761,20 @@ __webpack_require__.r(__webpack_exports__);
   @todo - Change this to a php driven file array, so it's translatable from the frontend
 ==========================================================================================*/
 /* harmony default export */ __webpack_exports__["default"] = ([{
-  url: "/",
+  href: "/",
   name: "Home",
-  slug: "home",
-  icon: "HomeIcon"
+  icon: "HomeIcon",
+  route: 'home.index'
 }, {
-  url: "/account",
+  href: "/account",
   name: "Account",
-  slug: "account",
-  icon: "SlidersIcon"
+  icon: "SlidersIcon",
+  route: "account.index"
 }, {
-  url: "/settings",
+  href: "/settings",
   name: "Instellingen",
-  slug: "settings",
-  icon: "IconSettings"
+  icon: "IconSetting",
+  route: 'settings.index'
 }]);
 
 /***/ })

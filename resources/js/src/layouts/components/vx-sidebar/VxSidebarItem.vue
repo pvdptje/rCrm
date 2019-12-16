@@ -9,14 +9,14 @@
 ========================================================================================== -->
 
 <template>
-    <div :class="[{'vs-sidebar-item-active':activeLink}, {'disabled-item pointer-events-none': isDisabled}]" class="vs-sidebar--item">
-
-        <a :target="target" :href="href">
+    <div :class="[{'vs-sidebar-item-active':checkIsActive()}, {'disabled-item pointer-events-none': isDisabled}]" class="vs-sidebar--item">
+        <inertia-link
+            :target="target" :href="href">
             <vs-icon v-if="!featherIcon" :icon-pack="iconPack" :icon="icon">
             </vs-icon>
             <feather-icon :icon="icon" :class="{'w-3 h-3': iconSmall}" v-else></feather-icon>
             <slot></slot>
-        </a>
+        </inertia-link>
     </div>
 </template>
 
@@ -38,6 +38,10 @@ export default {
         },
         href: {
             default: '#',
+            type: String
+        },
+        routeName: {
+            default: '',
             type: String
         },
         to: {
@@ -66,20 +70,13 @@ export default {
             activeLink: false,
         }
     },
-    watch: {
-        '$route'() {
-            this.CheckIsActive()
-        }
-    },
     methods: {
-        CheckIsActive() {
-            if (this.to) {
-               return false;
-            }
+        checkIsActive() {
+            return this.routeName === this.$page.currentRouteName;
         }
     },
     updated() {
-        this.CheckIsActive();
+        this.checkIsActive();
     }
 }
 </script>

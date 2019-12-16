@@ -25,21 +25,21 @@
 
 export default [
     {
-      url: "/",
+      href: "/",
       name: "Home",
-      slug: "home",
       icon: "HomeIcon",
+      route: 'home.index'
     },
     {
-      url: "/account",
+      href: "/account",
       name: "Account",
-      slug: "account",
       icon: "SlidersIcon",
+      route: "account.index"
     },
     {
-      url: "/settings",
+      href: "/settings",
       name: "Instellingen",
-      slug: "settings",
-      icon: "IconSettings"
+      icon: "IconSetting",
+      route: 'settings.index'
     }
 ]
