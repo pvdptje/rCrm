@@ -18,7 +18,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>{{ __('Email name') }}</span>
+                          <span>{{ __('Email') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" type="email" v-model="companyForm.invoice_email" />
@@ -183,6 +183,7 @@
                     {
                         link: '/account',
                         text: 'Account'
+
                     },
                 ],
                 companyForm: {

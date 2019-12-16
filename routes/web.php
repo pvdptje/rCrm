@@ -39,6 +39,9 @@ Route::group(['middleware' => ['set.locale', 'auth']], function(){
     Route::post('/user/edit/{user?}', 'UserController@update')->name('user.update');
     Route::get('/user/destroy/{user?}', 'UserController@destroy')->name('user.destroy');
 
+    Route::get('/settings', 'SettingsController@index')->name('settings.index');
+
+
     Route::post('/upload/{uploadableType}/{selector}', 'UploadController@upload')->name('upload.upload');
     Route::post('/user/saveSetting', 'UserController@saveSetting')->name('user.saveSetting');
 

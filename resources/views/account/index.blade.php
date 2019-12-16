@@ -24,6 +24,9 @@
                         <div class="col-sm-8 col-9">
                             <strong>{{_('Connect with your Google account to automatically place appointments made here into your calendar.')}}        <i class="fa fa-info mx-2"></i></strong>
                         </div>
+
+
+
                     </div>
                 </div>
             </div>

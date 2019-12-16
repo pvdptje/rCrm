@@ -48575,6 +48575,18 @@ var map = {
 		0,
 		4
 	],
+	"./Settings/Index": [
+		"./resources/js/src/Pages/Settings/Index.vue",
+		1,
+		0,
+		8
+	],
+	"./Settings/Index.vue": [
+		"./resources/js/src/Pages/Settings/Index.vue",
+		1,
+		0,
+		8
+	],
 	"./Test": [
 		"./resources/js/src/Pages/Test.vue",
 		1,

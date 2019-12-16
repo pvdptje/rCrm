@@ -7,12 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53bb0353-0239-4ab7-9767-75b2468f8f3f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/js/src/Pages/Settings/Index.vue" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
       <change beforePath="$PROJECT_DIR$/public/0.js" afterPath="$PROJECT_DIR$/public/0.js" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebar.vue" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebar.vue" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebarItem.vue" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebarItem.vue" />
-      <change beforePath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/sidebarItems.js" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/sidebarItems.js" />
+      <change beforePath="$PROJECT_DIR$/public/3.js" afterPath="$PROJECT_DIR$/public/3.js" />
+      <change beforePath="$PROJECT_DIR$/public/7.js" afterPath="$PROJECT_DIR$/public/7.js" />
+      <change beforePath="$PROJECT_DIR$/public/8.js" afterPath="$PROJECT_DIR$/public/8.js" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue" afterPath="$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue" />
+      <change beforePath="$PROJECT_DIR$/resources/js/src/layouts/components/TheNavbar.vue" afterPath="$PROJECT_DIR$/resources/js/src/layouts/components/TheNavbar.vue" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/vuesax/_customClasses.scss" afterPath="$PROJECT_DIR$/resources/sass/vuesax/_customClasses.scss" />
+      <change beforePath="$PROJECT_DIR$/resources/views/account/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/account/index.blade.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,68 +32,174 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Index.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Settings/Index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="36" column="113" lean-forward="false" selection-start-line="36" selection-start-column="113" selection-end-line="36" selection-end-column="113" />
+              <folding>
+                <element signature="e#2609#2647#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1122">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-              <folding>
-                <element signature="e#7105#7143#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Auth/Login.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-              <folding>
-                <element signature="e#2540#2582#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VxSidebar.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebar.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="41" column="206" lean-forward="false" selection-start-line="41" selection-start-column="206" selection-end-line="41" selection-end-column="206" />
+            <state relative-caret-position="2084">
+              <caret line="203" column="13" lean-forward="false" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VxSidebarItem.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebarItem.vue">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="77" column="15" lean-forward="true" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
+            <state relative-caret-position="75">
+              <caret line="51" column="79" lean-forward="false" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebarItems.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/sidebarItems.js">
+      <file leaf-file-name="SaveSetting.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/SaveSetting.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+            <state relative-caret-position="204">
+              <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/account/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="88" column="32" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="88" selection-end-column="32" />
+              <folding>
+                <marker date="1576509242878" expanded="true" signature="9:24" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="36:45" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="62:79" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="94:112" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="245:252" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="798:830" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="972:1075" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="1341:1363" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="1659:1712" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="1786:1882" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="1925:2002" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="2126:2171" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="2543:2569" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="2635:2668" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="2695:2708" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="2715:2730" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="2735:2778" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="2785:2797" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="2803:2830" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="3294:3313" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="3450:3465" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="3641:3662" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="4095:4108" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="4409:4490" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="4677:4692" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="4992:5028" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="5075:5090" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="5303:5326" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="5547:5552" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="5598:5618" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="6333:6360" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="6414:6483" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="6776:6830" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="6991:7011" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="7109:7172" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="7358:7368" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="7681:7702" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="7800:7865" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="8044:8054" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="8368:8382" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="8480:8537" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="8717:8727" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="9046:9060" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="9158:9221" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="9407:9417" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="9732:9748" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="9846:9905" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="10061:10071" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="10386:10402" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="10499:10576" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="10759:10769" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="11080:11092" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="11190:11245" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="11424:11434" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="11748:11763" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="11861:11919" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="12100:12110" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="12540:12552" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="12686:12701" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="12933:12953" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="13144:13151" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="13216:13236" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="13249:13260" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="13870:13889" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="14010:14023" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="14115:14129" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="14243:14263" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="14269:14289" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="14605:14644" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="14691:14704" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="14907:14919" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="14959:14985" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="15103:15125" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="15469:15480" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="15551:15563" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="15766:15781" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="15891:15902" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="16018:16031" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="16147:16159" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="16277:16307" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="16381:16415" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="16447:16479" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="16485:16504" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="16627:16647" ph="..." />
+                <marker date="1576509242878" expanded="true" signature="16653:16673" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SettingsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+              <folding>
+                <element signature="e#40#77#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_customClasses.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/sass/vuesax/_customClasses.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-44">
+              <caret line="428" column="16" lean-forward="false" selection-start-line="428" selection-start-column="16" selection-end-line="428" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="globalComponents.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/js/src/globalComponents.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="75" column="29" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -120,6 +235,7 @@
       <find>text-</find>
       <find>v-model=&quot;account.</find>
       <find>route</find>
+      <find>name</find>
     </findStrings>
     <replaceStrings>
       <replace>$this-&gt;query(</replace>
@@ -136,11 +252,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
-        <option value="$PROJECT_DIR$/resources/sass/custom/login.scss" />
-        <option value="$PROJECT_DIR$/resources/sass/login.scss" />
-        <option value="$PROJECT_DIR$/vendor/tightenco/ziggy/src/ZiggyServiceProvider.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" />
         <option value="$PROJECT_DIR$/resources/js/Shared/Form/TextInput.vue" />
         <option value="$PROJECT_DIR$/resources/js/Pages/Auth/Login.vue" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
@@ -148,7 +259,6 @@
         <option value="$PROJECT_DIR$/resources/js/src/layouts/full-page/FullPage.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/js/src/layouts/main/Test.vue" />
         <option value="$PROJECT_DIR$/resources/js/src/Pages/Test.vue" />
         <option value="$PROJECT_DIR$/resources/js/src/layouts/components/VxBreadcrumb.vue" />
@@ -163,7 +273,6 @@
         <option value="$PROJECT_DIR$/resources/js/themeConfig.js" />
         <option value="$PROJECT_DIR$/resources/js/src/layouts/FullPage.vue" />
         <option value="$PROJECT_DIR$/resources/js/src/components/image/Cropper.vue" />
-        <option value="$PROJECT_DIR$/resources/js/src/layouts/components/TheNavbar.vue" />
         <option value="$PROJECT_DIR$/app/Http/Requests/ValidateImageUpload.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UploadController.php" />
         <option value="$PROJECT_DIR$/resources/js/src/layouts/Layout.vue" />
@@ -182,11 +291,18 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Console/Commands/DropDb.php" />
         <option value="$PROJECT_DIR$/app/rCrm/Uploader.php" />
-        <option value="$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue" />
         <option value="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/sidebarItems.js" />
         <option value="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebar.vue" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebarItem.vue" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/resources/js/src/layouts/components/TheNavbar.vue" />
+        <option value="$PROJECT_DIR$/resources/sass/vuesax/_customClasses.scss" />
+        <option value="$PROJECT_DIR$/resources/views/account/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SettingsController.php" />
+        <option value="$PROJECT_DIR$/resources/js/src/Pages/Settings/Index.vue" />
       </list>
     </option>
   </component>
@@ -249,11 +365,29 @@
               <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
               <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
               <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -268,14 +402,6 @@
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
@@ -284,25 +410,6 @@
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vx-sidebar" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
@@ -319,7 +426,7 @@
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Account" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
@@ -328,7 +435,33 @@
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Settings" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sass" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vuesax" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="rCrm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rCrm" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="account" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -344,18 +477,18 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/MAMP/htdocs/rCrm.io/app/rCrm/Uploader.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\rCrm.io\resources\js\src" />
+      <recent name="C:\MAMP\htdocs\rCrm.io\resources\sass\vendor\shards-dashboard" />
+      <recent name="C:\MAMP\htdocs\rCrm.io\app\rCrm\Action" />
+      <recent name="C:\MAMP\htdocs\rCrm.io\resources\views\user" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\MAMP\htdocs\rCrm.io\resources\assets\images\logo" />
       <recent name="C:\MAMP\htdocs\rCrm.io\resources\js\src\layouts" />
       <recent name="C:\MAMP\htdocs\rCrm.io\resources\sass" />
       <recent name="C:\MAMP\htdocs\rCrm.io" />
       <recent name="C:\MAMP\htdocs\rCrm.io\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\MAMP\htdocs\rCrm.io\resources\js\src" />
-      <recent name="C:\MAMP\htdocs\rCrm.io\resources\sass\vendor\shards-dashboard" />
-      <recent name="C:\MAMP\htdocs\rCrm.io\app\rCrm\Action" />
-      <recent name="C:\MAMP\htdocs\rCrm.io\resources\views\user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -392,29 +525,29 @@
       <workItem from="1576001491986" duration="23582000" />
       <workItem from="1576099516971" duration="49952000" />
       <workItem from="1576322431096" duration="49730000" />
-      <workItem from="1576485788968" duration="7773000" />
+      <workItem from="1576485788968" duration="10672000" />
+      <workItem from="1576507244775" duration="5139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184268000" />
+    <option name="totallyTimeSpent" value="192306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="113" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2750533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2782516" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.50852877" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38586956" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38586956" sideWeight="0.4914712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -467,51 +600,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/VJS-An-32/VUESAX V3.2 - VUEJS + HTML ADMIN DASHBOARD TEMPLATE/vuesax-admin-v3.2/vuesax-html-admin-template/vuesax-html-admin-template/vuesax-html-admin-template/src/scss/bootstrap-extended.scss" />
-    <entry file="file://$PROJECT_DIR$/resources/js/src/components/vx-card/VxCard.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="201" column="23" lean-forward="true" selection-start-line="201" selection-start-column="23" selection-end-line="201" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/vuesax/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/components/vx-list/VxList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/components/statistics-cards/StatisticsCardLine.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/components/vx-input-group/VxInputGroup.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/layouts/FullPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="63" lean-forward="false" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/vuesax/dist/style/components/vsInput.styl" />
     <entry file="file://$PROJECT_DIR$/node_modules/vuesax/dist/vuesax.common.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/vuesax/dist/vuesax.umd.min.js" />
@@ -532,31 +620,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/src/components/image/Cropper.vue" />
-    <entry file="file://$PROJECT_DIR$/resources/js/src/layouts/components/TheNavbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="117" column="70" lean-forward="false" selection-start-line="117" selection-start-column="70" selection-end-line="117" selection-end-column="70" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#vs-dropdown-menu#0;n#vs-dropdown#0;n#div#1;n#vs-navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/account/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Listeners/CropAvatarUpload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -610,20 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/globalComponents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -640,13 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/translations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/allowed_settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -658,9 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,25 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding>
-            <element signature="e#758#784#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AccountController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="91" column="7" lean-forward="false" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="39" column="30" lean-forward="false" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,10 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
           <caret line="64" column="2" lean-forward="false" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="2" />
-          <folding>
-            <element signature="e#40#71#0#PHP" expanded="false" />
-            <marker date="1576486346183" expanded="true" signature="1568:1717" ph="SELECT GROUP... tables" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,9 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#654#675#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,27 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
           <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Auth/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding>
-            <element signature="e#2540#2582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding>
-            <element signature="e#7105#7143#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,29 +789,254 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="75" column="29" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/sidebarItems.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/src/layouts/components/vx-sidebar/VxSidebarItem.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="556">
           <caret line="77" column="15" lean-forward="true" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Auth/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="40" column="11" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="80" lean-forward="false" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Client/Create.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="190" column="14" lean-forward="false" selection-start-line="190" selection-start-column="14" selection-end-line="190" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/src/translations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ClientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/src/layouts/components/TheNavbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="120" column="46" lean-forward="true" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UserTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="62" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/google/apiclient-services/src/Google/Service/Calendar/Resource/CalendarList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/vuesax/_customClasses.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="428" column="16" lean-forward="false" selection-start-line="428" selection-start-column="16" selection-end-line="428" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/src/globalComponents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SaveSetting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/account/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="88" column="32" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="88" selection-end-column="32" />
+          <folding>
+            <marker date="1576509242878" expanded="true" signature="9:24" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="36:45" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="62:79" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="94:112" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="245:252" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="798:830" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="972:1075" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="1341:1363" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="1659:1712" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="1786:1882" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="1925:2002" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="2126:2171" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="2543:2569" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="2635:2668" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="2695:2708" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="2715:2730" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="2735:2778" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="2785:2797" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="2803:2830" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="3294:3313" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="3450:3465" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="3641:3662" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="4095:4108" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="4409:4490" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="4677:4692" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="4992:5028" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="5075:5090" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="5303:5326" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="5547:5552" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="5598:5618" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="6333:6360" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="6414:6483" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="6776:6830" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="6991:7011" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="7109:7172" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="7358:7368" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="7681:7702" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="7800:7865" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="8044:8054" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="8368:8382" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="8480:8537" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="8717:8727" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="9046:9060" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="9158:9221" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="9407:9417" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="9732:9748" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="9846:9905" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="10061:10071" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="10386:10402" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="10499:10576" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="10759:10769" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="11080:11092" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="11190:11245" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="11424:11434" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="11748:11763" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="11861:11919" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="12100:12110" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="12540:12552" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="12686:12701" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="12933:12953" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="13144:13151" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="13216:13236" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="13249:13260" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="13870:13889" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="14010:14023" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="14115:14129" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="14243:14263" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="14269:14289" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="14605:14644" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="14691:14704" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="14907:14919" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="14959:14985" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="15103:15125" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="15469:15480" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="15551:15563" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="15766:15781" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="15891:15902" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="16018:16031" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="16147:16159" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="16277:16307" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="16381:16415" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="16447:16479" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="16485:16504" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="16627:16647" ph="..." />
+            <marker date="1576509242878" expanded="true" signature="16653:16673" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Account/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2084">
+          <caret line="203" column="13" lean-forward="false" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="51" column="79" lean-forward="false" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SettingsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/src/Pages/Settings/Index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="36" column="113" lean-forward="false" selection-start-line="36" selection-start-column="113" selection-end-line="36" selection-end-column="113" />
+          <folding>
+            <element signature="e#2609#2647#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

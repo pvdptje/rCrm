@@ -349,7 +349,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "vx-row mb-6" }, [
                       _c("div", { staticClass: "vx-col sm:w-1/3 w-full" }, [
-                        _c("span", [_vm._v(_vm._s(_vm.__("Email name")))])
+                        _c("span", [_vm._v(_vm._s(_vm.__("Email")))])
                       ]),
                       _vm._v(" "),
                       _c(

@@ -3441,6 +3441,10 @@ ul.bordered-items > li:not(:last-of-type):not([class*='shadow']) {
   border-color: #414561;
 }
 
+.con-slot-tabs {
+  width: 100%;
+}
+
 /*=========================================================================================
   File Name: _fixesVuesax.scss
   Description: Partial - Fixes/Add vuesax styles

@@ -2509,7 +2509,7 @@ var render = function() {
                   { staticClass: "text-right leading-tight hidden sm:block" },
                   [
                     _c("p", { staticClass: "font-semibold" }, [
-                      _vm._v(_vm._s(_vm.$page.user.name))
+                      _vm._v(_vm._s(this.$page.auth.user.name))
                     ])
                   ]
                 ),
@@ -2526,7 +2526,7 @@ var render = function() {
                       { staticClass: "con-img ml-3" },
                       [
                         _c("vs-avatar", {
-                          attrs: { text: _vm.$page.user.name }
+                          attrs: { text: this.$page.auth.user.name }
                         })
                       ],
                       1

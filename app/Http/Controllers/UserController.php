@@ -43,7 +43,7 @@ class UserController extends Controller
 
         event( new UserModified($user, $request->user(), 'update'));
 
-        return redirect()->back()->with('message', __('User details updated'));
+        return redirect()->back()->with('success', __('User details updated'));
     }
 
 
@@ -51,14 +51,7 @@ class UserController extends Controller
     {
         $request->user()->saveSetting($request->get('key'), $request->get('value'));
 
-        $message =  __('Setting saved');
-
-        if($request->ajax()){
-            return $message;
-        }
-
-        return redirect()->back()->with('message',  __('Setting saved'));
-
+         return redirect()->back()->with('success',  __('Setting saved'));
     }
 
     /**
@@ -75,7 +68,7 @@ class UserController extends Controller
 
         event( new UserModified($deletedUser, $request->user(), 'delete'));
 
-        return redirect()->back()->with('message', __('User deleted'));
+        return redirect()->back()->with('success', __('User deleted'));
     }
 
 }
