@@ -3,17 +3,14 @@
 
         <vs-tabs position="left">
 
-            <vs-tab label="Calendar" position="left">
-                    <vx-card title="Calendar settings" subtitle="Connect your Google Calendar">
-
-
+            <vs-tab :label="__('Calendar')" position="left">
+                    <vx-card :title="__('Calendar settings')" :subtitle="__('Connect your account with Google Calendar')">
                         <div v-if="!isConnectedToGoogle">
                             <p class="mb-6">
                                 {{ __('Connect with your Google account to automatically place appointments made here into your calendar.')}}
                             </p>
-                            <vs-button href="/oauth/redirect" color="primary">{{_('Connect now')}}</vs-button>
+                            <vs-button href="/oauth/redirect?followUpUrl=/settings" color="primary">{{__('Connect now')}}</vs-button>
                         </div>
-
                         <div v-if="isConnectedToGoogle && !calendarId">
                             <p class="mb-6 font-bold">
                                 {{__('Your Google account is successfully connected.') }}
@@ -32,7 +29,6 @@
 
                             <vs-button @click="saveCalendar" color="primary">{{ __('Save calendar') }}</vs-button>
                         </div>
-
                         <div v-if="isConnectedToGoogle && calendarId">
                             <p class="mb-6 font-bold">{{ __('Your Google Calendar is successfully connected.') }}</p>
                             <p class="mb-6">
@@ -42,10 +38,26 @@
                                  {{ __('If you wish to change or disconnect the calendar')}} <a class="cursor-pointer" @click="disconnectCalendar">{{ __('Click here') }}</a>
                             </p>
                         </div>
-
                     </vx-card>
             </vs-tab>
+            <vs-tab :label="__('Invoicing settings')" position="left">
+                <vx-card :title="__('Change your invoicing settings')">
+
+
+                    <div class="vx-row">
+                        <div class="vx-col sm:w-1/2 w-full mb-2">
+                            <vs-input class="w-full" label-placeholder="First Name" v-model="input25" />
+                        </div>
+                        <div class="vx-col sm:w-1/2 w-full mb-2">
+                            <vs-input class="w-full" label-placeholder="Last Name" v-model="input26" />
+                        </div>
+                    </div>
+
+
+                </vx-card>
+            </vs-tab>
         </vs-tabs>
+
 
 
 
@@ -55,18 +67,20 @@
 
     import Layout from '@/layouts/Layout';
     import Translations from '@/translations';
+    import VxCard from "../../components/vx-card/VxCard";
 
     export default {
         mixins: [
             Translations
         ],
         components: {
+            VxCard,
             Layout,
         },
         props: {
             'isConnectedToGoogle': Boolean,
             'calendarId': String,
-            'calendarList': Object,
+            'calendarList': Array,
         },
         data(){
             return {

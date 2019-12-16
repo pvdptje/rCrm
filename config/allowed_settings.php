@@ -5,5 +5,25 @@
  * @see \App\Http\Requests\SaveSetting
  */
 return [
-    'google_calendar_id'
+    //
+    'wage' => [
+        'rules' => [''], // @todo Make a 'price' validation rule.
+        'attribute' => 'Your wage'
+    ],
+    //i.e hourly / unit
+    'wage_unit' => [
+
+    ],
+    'google_calendar_id' => [
+        'rules' => ['max:255'],
+        'attribute' => 'Google Calendar Id'
+    ],
+    'start_invoicenumber_at' =>  [
+        'rules' => ['number'],
+        'attribute' => 'Start invoice number at'
+    ],
+    'invoicenumber_prefix' =>  [
+        'rules' => ['max:15'],
+        'attribute' => 'Invoice number prefix'
+    ],
 ];

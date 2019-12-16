@@ -30,6 +30,12 @@ class OAuthController extends Controller
         if(Session::has('googleAuthUrl')){ // This page shouldnt be called on its own.
             return redirect(Session::get('googleAuthUrl'));
         }
+
+        if($request->has('followUpUrl')){
+            Session::put('followUpUrl', $request->get('followUpUrl'));
+            return redirect('/oauth/redirect');
+        }
+
         // No auth url?, this should trigger a redirect
         $repository->getGoogleClient($request->user());
 

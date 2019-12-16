@@ -33,9 +33,12 @@
                                 <!-- BREADCRUMB -->
                                 <vx-breadcrumb class="ml-4 md:block hidden" v-bind:breadcrumbs="breadcrumbs" />
 
+
+                                <vs-button v-if="isThemeDark" @click="setTheme('light')" radius icon="icon-sun" class="ml-auto md:block cursor-pointer" icon-pack="feather"></vs-button>
+                                <vs-button v-if="!isThemeDark" @click="setTheme('dark')" radius icon="icon-moon" class="ml-auto md:block cursor-pointer" icon-pack="feather"></vs-button>
                                 <!-- DROPDOWN -->
-                                <vs-dropdown class="ml-auto md:block hidden cursor-pointer" vs-trigger-click>
-                                    <vs-button radius icon="icon-settings" icon-pack="feather"></vs-button>
+                                <!--<vs-dropdown class="ml-auto md:block hidden cursor-pointer" vs-trigger-click>
+
 
                                     <vs-dropdown-menu class="w-32">
                                         <vs-dropdown-item>
@@ -59,7 +62,7 @@
                                             </div>
                                         </vs-dropdown-item>
                                     </vs-dropdown-menu>
-                                </vs-dropdown>
+                                </vs-dropdown>-->
                             </div>
                     </div>
 
@@ -194,6 +197,15 @@
                 } else {
                     if (document.body.className.match('theme-dark')) document.body.classList.remove('theme-dark');
                     if (document.body.className.match('theme-semi-dark')) document.body.classList.remove('theme-semi-dark');
+                }
+            },
+            setTheme(theme){
+                this.$store.state.theme = theme;
+                this.toggleClassInBody(this.$store.state.theme);
+                if(this.navbarColor == "#fff" && this.isThemeDark) {
+                    this.updateNavbarColor("#10163a")
+                }else {
+                    this.updateNavbarColor(this.navbarColor)
                 }
             }
         },

@@ -8,7 +8,8 @@ return [
 
     // File Patterns to search for.
     'patterns'=> [
-        '*.php'
+        '*.php',
+        '*.Vue'
     ],
 
     // Translation function names.

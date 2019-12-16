@@ -48544,14 +48544,14 @@ var map = {
 	"./Account/Index": [
 		"./resources/js/src/Pages/Account/Index.vue",
 		1,
-		6,
+		7,
 		0,
 		3
 	],
 	"./Account/Index.vue": [
 		"./resources/js/src/Pages/Account/Index.vue",
 		1,
-		6,
+		7,
 		0,
 		3
 	],
@@ -48579,25 +48579,25 @@ var map = {
 		"./resources/js/src/Pages/Settings/Index.vue",
 		1,
 		0,
-		8
+		5
 	],
 	"./Settings/Index.vue": [
 		"./resources/js/src/Pages/Settings/Index.vue",
 		1,
 		0,
-		8
+		5
 	],
 	"./Test": [
 		"./resources/js/src/Pages/Test.vue",
 		1,
 		0,
-		5
+		6
 	],
 	"./Test.vue": [
 		"./resources/js/src/Pages/Test.vue",
 		1,
 		0,
-		5
+		6
 	]
 };
 function webpackAsyncContext(req) {
@@ -49757,9 +49757,9 @@ var themeConfig = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\assets\css\main.css */"./resources/assets/css/main.css");
+__webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\assets\css\main.css */"./resources/assets/css/main.css");
 
 
 /***/ })

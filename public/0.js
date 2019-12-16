@@ -311,6 +311,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 
@@ -415,6 +418,16 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         if (document.body.className.match('theme-dark')) document.body.classList.remove('theme-dark');
         if (document.body.className.match('theme-semi-dark')) document.body.classList.remove('theme-semi-dark');
+      }
+    },
+    setTheme: function setTheme(theme) {
+      this.$store.state.theme = theme;
+      this.toggleClassInBody(this.$store.state.theme);
+
+      if (this.navbarColor == "#fff" && this.isThemeDark) {
+        this.updateNavbarColor("#10163a");
+      } else {
+        this.updateNavbarColor(this.navbarColor);
       }
     }
   },
@@ -1806,111 +1819,37 @@ var render = function() {
                           attrs: { breadcrumbs: _vm.breadcrumbs }
                         }),
                         _vm._v(" "),
-                        _c(
-                          "vs-dropdown",
-                          {
-                            staticClass:
-                              "ml-auto md:block hidden cursor-pointer",
-                            attrs: { "vs-trigger-click": "" }
-                          },
-                          [
-                            _c("vs-button", {
+                        _vm.isThemeDark
+                          ? _c("vs-button", {
+                              staticClass: "ml-auto md:block cursor-pointer",
                               attrs: {
                                 radius: "",
-                                icon: "icon-settings",
+                                icon: "icon-sun",
                                 "icon-pack": "feather"
+                              },
+                              on: {
+                                click: function($event) {
+                                  return _vm.setTheme("light")
+                                }
                               }
-                            }),
-                            _vm._v(" "),
-                            _c(
-                              "vs-dropdown-menu",
-                              { staticClass: "w-32" },
-                              [
-                                _c("vs-dropdown-item", [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "flex items-center",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.$router.push(
-                                            "/pages/profile"
-                                          )
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("feather-icon", {
-                                        staticClass: "inline-block mr-2",
-                                        attrs: {
-                                          icon: "UserIcon",
-                                          svgClasses: "w-4 h-4"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("Profile")])
-                                    ],
-                                    1
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("vs-dropdown-item", [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "flex items-center",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.$router.push("/apps/todo")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("feather-icon", {
-                                        staticClass: "inline-block mr-2",
-                                        attrs: {
-                                          icon: "CheckSquareIcon",
-                                          svgClasses: "w-4 h-4"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("Tasks")])
-                                    ],
-                                    1
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("vs-dropdown-item", [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "flex items-center",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.$router.push("/apps/email")
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("feather-icon", {
-                                        staticClass: "inline-block mr-2",
-                                        attrs: {
-                                          icon: "MailIcon",
-                                          svgClasses: "w-4 h-4"
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c("span", [_vm._v("Inbox")])
-                                    ],
-                                    1
-                                  )
-                                ])
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
+                            })
+                          : _vm._e(),
+                        _vm._v(" "),
+                        !_vm.isThemeDark
+                          ? _c("vs-button", {
+                              staticClass: "ml-auto md:block cursor-pointer",
+                              attrs: {
+                                radius: "",
+                                icon: "icon-moon",
+                                "icon-pack": "feather"
+                              },
+                              on: {
+                                click: function($event) {
+                                  return _vm.setTheme("dark")
+                                }
+                              }
+                            })
+                          : _vm._e()
                       ],
                       1
                     )

@@ -13,7 +13,7 @@ class SaveSetting extends FormRequest
      */
     public function authorize()
     {
-        return in_array($this->get('key'), config('allowed_settings'));
+        return array_key_exists($this->get('key'), config('allowed_settings'));
     }
 
     /**
@@ -24,14 +24,14 @@ class SaveSetting extends FormRequest
     public function rules()
     {
         return [
-            'key' => 'required'
+            'value' => config('allowed_settings')[$this->get('key')]['rules'] ?? []
         ];
     }
 
     public function attributes()
     {
         return [
-            'key' => __('key')
+            'key' => config('allowed_settings')[$this->get('key')]['attribute'] ?? []
         ];
     }
 }

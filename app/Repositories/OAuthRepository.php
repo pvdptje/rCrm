@@ -38,7 +38,6 @@ class OAuthRepository extends BaseRepository
            // Exchange authorization code for an access token.
            $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
            $this->saveOAuthCredentials($user, $oauth, $accessToken, $client);
-
            return $client;
        }
 

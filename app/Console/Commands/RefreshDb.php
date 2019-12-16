@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class RefreshDb extends DropDb
+class RefreshDb extends Command
 {
     /**
      * The name and signature of the console command.
@@ -33,17 +33,8 @@ class RefreshDb extends DropDb
     public function handle()
     {
         if(in_array(env('APP_ENV'), ['local', 'staging'])){
-            // Using default php mysqli here.
-            $this->info('Dropping database');
-            $this->doQueries();
-            $this->info(sprintf('Database %s dropped', env('DB_DATABASE')));
-            $this->info('starting migrations..');
-            $this->call('migrate');
-            $this->info('migrations done..');
-            $this->info('starting seed..');
+            $this->call('migrate:refresh');
             $this->call('db:seed');
-            $this->info('seeding done..');
-            $this->info('All done');
             return;
         }
 
