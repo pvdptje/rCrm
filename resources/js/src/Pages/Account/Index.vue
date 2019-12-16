@@ -42,7 +42,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>Nummer</span>
+                          <span>{{ __('House number') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" v-model="companyForm.house_number" />
@@ -50,7 +50,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>Postcode</span>
+                          <span>{{ __('Postcode') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" v-model="companyForm.postcode" />
@@ -58,7 +58,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>Plaats</span>
+                          <span>{{ __('City') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" v-model="companyForm.city" />
@@ -66,7 +66,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>Provincie</span>
+                          <span>{{ __('Province') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" v-model="companyForm.province" />
@@ -74,7 +74,7 @@
                   </div>
                   <div class="vx-row mb-6">
                       <div class="vx-col sm:w-1/3 w-full">
-                          <span>Land</span>
+                          <span>{{ __('Country') }}</span>
                       </div>
                       <div class="vx-col sm:w-2/3 w-full">
                           <vs-input class="w-full" v-model="companyForm.country" />
@@ -91,7 +91,7 @@
           </div>
           <div class="vx-col w-full sm:w-1/4 mb-base">
 
-              <vx-card title="Logo" subtitle="Wijzig hier je bedrijfslogo">
+              <vx-card :title="__('Logo')" :subtitle="__('Change your company logo here')">
 
                   <div v-if="this.$page.account.logo && !companyLogo.input" class="mb-6">
                       <img :src="this.$page.account.logo" class="max-w-full" />
@@ -169,6 +169,7 @@
     import 'cropperjs/dist/cropper.css';
 
     export default {
+        metaInfo: { title: 'Account' },
         mixins: [
           Translations
         ],

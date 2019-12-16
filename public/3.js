@@ -186,6 +186,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  metaInfo: {
+    title: 'Account'
+  },
   mixins: [_translations__WEBPACK_IMPORTED_MODULE_3___default.a],
   props: {
     user: Object,
@@ -419,7 +422,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "vx-row mb-6" }, [
                       _c("div", { staticClass: "vx-col sm:w-1/3 w-full" }, [
-                        _c("span", [_vm._v("Nummer")])
+                        _c("span", [_vm._v(_vm._s(_vm.__("House number")))])
                       ]),
                       _vm._v(" "),
                       _c(
@@ -443,7 +446,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "vx-row mb-6" }, [
                       _c("div", { staticClass: "vx-col sm:w-1/3 w-full" }, [
-                        _c("span", [_vm._v("Postcode")])
+                        _c("span", [_vm._v(_vm._s(_vm.__("Postcode")))])
                       ]),
                       _vm._v(" "),
                       _c(
@@ -467,7 +470,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "vx-row mb-6" }, [
                       _c("div", { staticClass: "vx-col sm:w-1/3 w-full" }, [
-                        _c("span", [_vm._v("Plaats")])
+                        _c("span", [_vm._v(_vm._s(_vm.__("City")))])
                       ]),
                       _vm._v(" "),
                       _c(
@@ -491,7 +494,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "vx-row mb-6" }, [
                       _c("div", { staticClass: "vx-col sm:w-1/3 w-full" }, [
-                        _c("span", [_vm._v("Provincie")])
+                        _c("span", [_vm._v(_vm._s(_vm.__("Province")))])
                       ]),
                       _vm._v(" "),
                       _c(
@@ -515,7 +518,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "vx-row mb-6" }, [
                       _c("div", { staticClass: "vx-col sm:w-1/3 w-full" }, [
-                        _c("span", [_vm._v("Land")])
+                        _c("span", [_vm._v(_vm._s(_vm.__("Country")))])
                       ]),
                       _vm._v(" "),
                       _c(
@@ -565,8 +568,8 @@ var render = function() {
               "vx-card",
               {
                 attrs: {
-                  title: "Logo",
-                  subtitle: "Wijzig hier je bedrijfslogo"
+                  title: _vm.__("Logo"),
+                  subtitle: _vm.__("Change your company logo here")
                 }
               },
               [

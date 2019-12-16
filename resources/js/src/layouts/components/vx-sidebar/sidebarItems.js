@@ -16,20 +16,30 @@
   Item Name: Vuesax Admin - VueJS Dashboard Admin Template
   Author: Pixinvent
   Author URL: http://www.themeforest.net/user/pixinvent
+
+
+
+  @todo - Change this to a php driven file array, so it's translatable from the frontend
 ==========================================================================================*/
 
 
 export default [
-  {
-    url: "/",
-    name: "Home",
-    slug: "home",
-    icon: "HomeIcon",
-  },
-  {
-    url: "/page2",
-    name: "Page 2",
-    slug: "page2",
-    icon: "FileIcon",
-  },
+    {
+      url: "/",
+      name: "Home",
+      slug: "home",
+      icon: "HomeIcon",
+    },
+    {
+      url: "/account",
+      name: "Account",
+      slug: "account",
+      icon: "SlidersIcon",
+    },
+    {
+      url: "/settings",
+      name: "Instellingen",
+      slug: "settings",
+      icon: "IconSettings"
+    }
 ]

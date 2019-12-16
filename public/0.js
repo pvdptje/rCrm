@@ -3759,6 +3759,10 @@ __webpack_require__.r(__webpack_exports__);
   Item Name: Vuesax Admin - VueJS Dashboard Admin Template
   Author: Pixinvent
   Author URL: http://www.themeforest.net/user/pixinvent
+
+
+
+  @todo - Change this to a php driven file array, so it's translatable from the frontend
 ==========================================================================================*/
 /* harmony default export */ __webpack_exports__["default"] = ([{
   url: "/",
@@ -3766,10 +3770,15 @@ __webpack_require__.r(__webpack_exports__);
   slug: "home",
   icon: "HomeIcon"
 }, {
-  url: "/page2",
-  name: "Page 2",
-  slug: "page2",
-  icon: "FileIcon"
+  url: "/account",
+  name: "Account",
+  slug: "account",
+  icon: "SlidersIcon"
+}, {
+  url: "/settings",
+  name: "Instellingen",
+  slug: "settings",
+  icon: "IconSettings"
 }]);
 
 /***/ })
