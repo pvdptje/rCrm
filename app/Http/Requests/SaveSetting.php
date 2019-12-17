@@ -31,7 +31,7 @@ class SaveSetting extends FormRequest
     public function attributes()
     {
         return [
-            'key' => config('allowed_settings')[$this->get('key')]['attribute'] ?? []
+            'key' => config('allowed_settings') [$this->get('key')]['attribute'] ?? []
         ];
     }
 }

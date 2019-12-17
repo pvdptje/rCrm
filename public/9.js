@@ -1,13 +1,13 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
 
-/***/ "./resources/js/src/layouts/main/Main.vue":
+/***/ "./resources/js/src/Pages/Errors/Page.Vue":
 /*!************************************************!*\
-  !*** ./resources/js/src/layouts/main/Main.vue ***!
+  !*** ./resources/js/src/Pages/Errors/Page.Vue ***!
   \************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed (from ./node_modules/vue-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'C:\\MAMP\\htdocs\\rCrm.io\\resources\\js\\src\\layouts\\main\\Main.vue'");
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> <template>\n|     <FullPage title=\"Er ging iets mis..\">\n|         <div>");
 
 /***/ })
 

@@ -1,4 +1,4 @@
-module.exports = {
+let translations = {
     methods: {
         /**
          * Translate the given key.
@@ -30,3 +30,5 @@ module.exports = {
         },
     },
 }
+
+export default translations

@@ -42,6 +42,8 @@
     import VxCard from "../../components/vx-card/VxCard";
     import VxInputGroup from "../../components/vx-input-group/VxInputGroup";
 
+    //@todo Use translations mixin.
+
     export default {
         metaInfo: { title: 'Login' },
         components: {
@@ -74,7 +76,7 @@
         },
         methods: {
             submit() {
-                this.$vs.loading();
+                this.$vs.loading()
                 this.sending = true
                 this.$inertia.post('/login', {
                     email: this.form.email,

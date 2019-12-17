@@ -67,3 +67,7 @@ Route::group(['middleware' => ['set.locale', 'auth']], function(){
     Route::get('/oauth/callback', 'Auth\OAuthController@handleGoogleCallback')->name('oauth.google.callback');
 });
 
+
+Route::get('/404', function(){
+   return inertia('Errors/Page');
+});

@@ -53,6 +53,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 
+ //@todo Use translations mixin.
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   metaInfo: {

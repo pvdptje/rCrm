@@ -309,11 +309,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 
 
 
@@ -422,13 +417,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     setTheme: function setTheme(theme) {
       this.$store.state.theme = theme;
-      this.toggleClassInBody(this.$store.state.theme);
-
-      if (this.navbarColor == "#fff" && this.isThemeDark) {
-        this.updateNavbarColor("#10163a");
-      } else {
-        this.updateNavbarColor(this.navbarColor);
-      }
     }
   },
   components: {

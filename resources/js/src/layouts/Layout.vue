@@ -33,13 +33,11 @@
                                 <!-- BREADCRUMB -->
                                 <vx-breadcrumb class="ml-4 md:block hidden" v-bind:breadcrumbs="breadcrumbs" />
 
-
+                                <!-- Lightswitch ^^ -->
                                 <vs-button v-if="isThemeDark" @click="setTheme('light')" radius icon="icon-sun" class="ml-auto md:block cursor-pointer" icon-pack="feather"></vs-button>
                                 <vs-button v-if="!isThemeDark" @click="setTheme('dark')" radius icon="icon-moon" class="ml-auto md:block cursor-pointer" icon-pack="feather"></vs-button>
                                 <!-- DROPDOWN -->
                                 <!--<vs-dropdown class="ml-auto md:block hidden cursor-pointer" vs-trigger-click>
-
-
                                     <vs-dropdown-menu class="w-32">
                                         <vs-dropdown-item>
                                             <div @click="$router.push('/pages/profile')" class="flex items-center">
@@ -65,7 +63,6 @@
                                 </vs-dropdown>-->
                             </div>
                     </div>
-
                 <div class="content-area__content">
                     <back-to-top bottom="5%" visibleoffset="500" v-if="!hideScrollToTop">
                         <vs-button icon-pack="feather" icon="icon-arrow-up" class="shadow-lg" />
@@ -77,16 +74,14 @@
                     <vs-alert color="danger" class="mb-6" title="Oeps!" v-if="this.$page.flash.error">
                         {{this.$page.flash.error}}
                     </vs-alert>
-                                  <slot/>
 
+                     <slot/>
                     </div>
                 </div>
             </div>
             </div>
-
             <the-footer></the-footer>
         </div>
-
 </template>
 
 <script>
@@ -201,12 +196,6 @@
             },
             setTheme(theme){
                 this.$store.state.theme = theme;
-                this.toggleClassInBody(this.$store.state.theme);
-                if(this.navbarColor == "#fff" && this.isThemeDark) {
-                    this.updateNavbarColor("#10163a")
-                }else {
-                    this.updateNavbarColor(this.navbarColor)
-                }
             }
         },
         components: {

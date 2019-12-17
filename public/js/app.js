@@ -48575,6 +48575,14 @@ var map = {
 		0,
 		4
 	],
+	"./Errors/Page": [
+		"./resources/js/src/Pages/Errors/Page.vue",
+		8
+	],
+	"./Errors/Page.vue": [
+		"./resources/js/src/Pages/Errors/Page.vue",
+		8
+	],
 	"./Settings/Index": [
 		"./resources/js/src/Pages/Settings/Index.vue",
 		1,
@@ -49285,7 +49293,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store/store */ "./resources/js/src/store/store.js");
 /* harmony import */ var _filters_filters__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./filters/filters */ "./resources/js/src/filters/filters.js");
 /* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./translations */ "./resources/js/src/translations.js");
-/* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_translations__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var vue2_hammer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue2-hammer */ "./node_modules/vue2-hammer/index.min.js");
 /* harmony import */ var vue2_hammer__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(vue2_hammer__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var prismjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prismjs */ "./node_modules/prismjs/prism.js");
@@ -49641,10 +49648,12 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
 /*!******************************************!*\
   !*** ./resources/js/src/translations.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = {
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var translations = {
   methods: {
     /**
      * Translate the given key.
@@ -49674,6 +49683,7 @@ module.exports = {
     }
   }
 };
+/* harmony default export */ __webpack_exports__["default"] = (translations);
 
 /***/ }),
 

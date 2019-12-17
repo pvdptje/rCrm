@@ -11,7 +11,6 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/layouts/Layout */ "./resources/js/src/layouts/Layout.vue");
 /* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/translations */ "./resources/js/src/translations.js");
-/* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_translations__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_vx_card_VxCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/vx-card/VxCard */ "./resources/js/src/components/vx-card/VxCard.vue");
 //
 //
@@ -82,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mixins: [_translations__WEBPACK_IMPORTED_MODULE_1___default.a],
+  mixins: [_translations__WEBPACK_IMPORTED_MODULE_1__["default"]],
   components: {
     VxCard: _components_vx_card_VxCard__WEBPACK_IMPORTED_MODULE_2__["default"],
     Layout: _layouts_Layout__WEBPACK_IMPORTED_MODULE_0__["default"]
