@@ -69,5 +69,5 @@ Route::group(['middleware' => ['set.locale', 'auth']], function(){
 
 
 Route::get('/404', function(){
-   return inertia('Errors/Page');
+   abort(501);
 });

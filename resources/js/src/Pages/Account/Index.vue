@@ -169,7 +169,6 @@
     import 'cropperjs/dist/cropper.css';
 
     export default {
-        metaInfo: { title: 'Account' },
         mixins: [
           Translations
         ],
@@ -182,7 +181,7 @@
                 breadcrumbs: [
                     {
                         link: '/account',
-                        text: 'Account'
+                        text: this.__('Account')
 
                     },
                 ],
@@ -201,6 +200,7 @@
                     input: null
                 },
                 uploadError: false,
+                pageTitle: 'Acccount'
             }
         },
         methods: {

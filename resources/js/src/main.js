@@ -56,7 +56,6 @@ new Vue({
     store,
     metaInfo: {
         title: 'Loading…',
-        titleTemplate: '%s | rCrm',
     },
     render: h => h(InertiaApp, {
         props: {

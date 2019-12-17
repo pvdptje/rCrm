@@ -48543,17 +48543,17 @@ __webpack_require__.r(__webpack_exports__);
 var map = {
 	"./Account/Index": [
 		"./resources/js/src/Pages/Account/Index.vue",
-		1,
-		7,
+		9,
+		8,
 		0,
-		3
+		4
 	],
 	"./Account/Index.vue": [
 		"./resources/js/src/Pages/Account/Index.vue",
-		1,
-		7,
+		9,
+		8,
 		0,
-		3
+		4
 	],
 	"./Auth/Login": [
 		"./resources/js/src/Pages/Auth/Login.vue",
@@ -48565,47 +48565,47 @@ var map = {
 	],
 	"./Client/Create": [
 		"./resources/js/src/Pages/Client/Create.vue",
-		1,
+		9,
 		0,
-		4
+		5
 	],
 	"./Client/Create.vue": [
 		"./resources/js/src/Pages/Client/Create.vue",
-		1,
+		9,
 		0,
-		4
+		5
 	],
 	"./Errors/Page": [
 		"./resources/js/src/Pages/Errors/Page.vue",
-		8
+		3
 	],
 	"./Errors/Page.vue": [
 		"./resources/js/src/Pages/Errors/Page.vue",
-		8
+		3
 	],
 	"./Settings/Index": [
 		"./resources/js/src/Pages/Settings/Index.vue",
-		1,
+		9,
 		0,
-		5
+		6
 	],
 	"./Settings/Index.vue": [
 		"./resources/js/src/Pages/Settings/Index.vue",
-		1,
+		9,
 		0,
-		5
+		6
 	],
 	"./Test": [
 		"./resources/js/src/Pages/Test.vue",
-		1,
+		9,
 		0,
-		6
+		7
 	],
 	"./Test.vue": [
 		"./resources/js/src/Pages/Test.vue",
-		1,
+		9,
 		0,
-		6
+		7
 	]
 };
 function webpackAsyncContext(req) {
@@ -49293,6 +49293,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store/store */ "./resources/js/src/store/store.js");
 /* harmony import */ var _filters_filters__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./filters/filters */ "./resources/js/src/filters/filters.js");
 /* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./translations */ "./resources/js/src/translations.js");
+/* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_translations__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var vue2_hammer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue2-hammer */ "./node_modules/vue2-hammer/index.min.js");
 /* harmony import */ var vue2_hammer__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(vue2_hammer__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var prismjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prismjs */ "./node_modules/prismjs/prism.js");
@@ -49342,8 +49343,7 @@ var app = document.getElementById('app');
 new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   store: _store_store__WEBPACK_IMPORTED_MODULE_4__["default"],
   metaInfo: {
-    title: 'Loading…',
-    titleTemplate: '%s | rCrm'
+    title: 'Loading…'
   },
   render: function render(h) {
     return h(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_10__["InertiaApp"], {
@@ -49648,12 +49648,10 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
 /*!******************************************!*\
   !*** ./resources/js/src/translations.js ***!
   \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var translations = {
+module.exports = {
   methods: {
     /**
      * Translate the given key.
@@ -49665,25 +49663,14 @@ var translations = {
         translation = translation.replace(':' + key, replace[key]);
       });
       return translation;
-    },
-
-    /**
-     * Translate the given key with basic pluralization.
-     */
-    __n: function __n(key, number) {
-      var replace = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-      var options = key.split('|');
-      key = options[1];
-
-      if (number == 1) {
-        key = options[0];
-      }
-
-      return tt(key, replace);
+    }
+  },
+  mounted: function mounted() {
+    if (typeof this.pageTitle !== 'undefined') {
+      document.title = this.__(this.pageTitle);
     }
   }
 };
-/* harmony default export */ __webpack_exports__["default"] = (translations);
 
 /***/ }),
 
@@ -49767,9 +49754,9 @@ var themeConfig = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\MAMP\htdocs\rCrm.io\resources\assets\css\main.css */"./resources/assets/css/main.css");
+__webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\webdev\rcrm\rCrm\resources\assets\css\main.css */"./resources/assets/css/main.css");
 
 
 /***/ })

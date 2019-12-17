@@ -52,7 +52,7 @@ class Handler extends ExceptionHandler
     {
         $response = parent::render($request, $exception);
 
-        if ($request->header('X-Inertia') && in_array($response->status(), [500, 503, 404, 403, 401])) {
+        if (in_array($response->status(), [500, 503, 404, 403, 401]) && env('APP_ENV') == 'production') {
             return Inertia::render('Errors/Page', ['statusCode' => $response->status()])
                 ->toResponse($request)
                 ->setStatusCode($response->status());

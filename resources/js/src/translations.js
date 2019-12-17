@@ -1,4 +1,4 @@
-let translations = {
+module.exports = {
     methods: {
         /**
          * Translate the given key.
@@ -13,22 +13,12 @@ let translations = {
             });
 
             return translation
-        },
-
-        /**
-         * Translate the given key with basic pluralization.
-         */
-        __n(key, number, replace = {}) {
-            let options = key.split('|');
-
-            key = options[1];
-            if(number == 1) {
-                key = options[0];
-            }
-
-            return tt(key, replace);
-        },
+        }
     },
+    mounted(){
+        if(typeof this.pageTitle !== 'undefined'){
+            document.title = this.__(this.pageTitle)
+        }
+    }
 }
 
-export default translations

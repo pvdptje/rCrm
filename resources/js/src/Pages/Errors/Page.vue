@@ -10,11 +10,21 @@
                     <h1 v-if="statusCode === '401'" class="sm:mx-0 mx-4 mb-12 text-5xl d-theme-heading-color">{{ __('401 - Unauthorized request') }}</h1>
                     <h1 v-if="statusCode === '403'" class="sm:mx-0 mx-4 mb-12 text-5xl d-theme-heading-color">{{ __('403 - Forbidden') }}</h1>
 
-                    <p class="sm:mx-0 mx-4 mb-4 sm:mb-16 d-theme-text-inverse">
-                        paraphonic unassessable foramination Caulopteris worral Spirophyton encrimson esparcet aggerate chondrule restate whistler shallopy biosystematy area bertram plotting unstarting quarterstaff.
+                    <p v-if="statusCode === 404" class="sm:mx-0 mx-4 mb-4 sm:mb-16 d-theme-text-inverse">
+                        {{__("Seems this page went missing, sorry.")}}
+                     </p>
+                    <p v-if="statusCode === 500" class="sm:mx-0 mx-4 mb-4 sm:mb-16 d-theme-text-inverse">
+                        {{__("Something went wrong on our end, our developers have been notified.")}}
                     </p>
-
-                    <input type="hidden" id="statusCodeInput" :value="statusCode"/>
+                    <p v-if="statusCode === 503" class="sm:mx-0 mx-4 mb-4 sm:mb-16 d-theme-text-inverse">
+                        {{__("Something went wrong on our end, our developers have been notified.")}}
+                    </p>
+                    <p v-if="statusCode === 401" class="sm:mx-0 mx-4 mb-4 sm:mb-16 d-theme-text-inverse">
+                        {{__("It seems you are not authorized to make this request. Our developers have been notified.")}}
+                    </p>
+                    <p v-if="statusCode === 401" class="sm:mx-0 mx-4 mb-4 sm:mb-16 d-theme-text-inverse">
+                        {{__("It seems you have no access to this page.")}}
+                    </p>
 
                     <vs-button href="/">{{__('Back to Home')}}</vs-button>
             </div>
@@ -28,21 +38,16 @@
     import Translations from '@/translations'
 
     export default {
-        metaInfo: {
-          title: 'Something went wrong..'
-        },
         mixins : [
           Translations
         ],
+        data(){
+            return {
+               pageTitle: this.statusCode + ' - Something went wrong'
+            }
+        },
         components: {
             FullPage
-        },
-        created(){
-            const title = document.querySelector('head title');
-            // Update the meta info the with translation
-            this.$nextTick( () => {
-                title.textContent = this.statusCode + ' - ' + __('Something went wrong')
-            })
         },
         props: ['statusCode'],
     }
