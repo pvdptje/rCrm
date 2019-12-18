@@ -17,6 +17,9 @@ class AppointmentController extends Controller
 
         // We need a list of clients;
 
+
+        return inertia('Appointment/Form');
+
         return view('appointment.form');
     }
 

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\rCrm\Navbar\Navbar;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Schema;
@@ -53,6 +54,13 @@ class AppServiceProvider extends ServiceProvider
                         ],
                     ] : null,
                 ];
+            },
+            'navBar' => function(){
+                if(Auth::check()){
+                    return (new Navbar(Auth::user()))->build();
+                }
+
+                return [];
             },
             'flash' => function () {
                 return [

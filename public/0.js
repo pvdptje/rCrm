@@ -309,6 +309,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -893,6 +894,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -968,6 +974,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       return function (sidebarItem) {
+        return false;
         var path = _this.$route.fullPath;
         var open = false;
 
@@ -1168,6 +1175,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       return function (sidebarItem) {
+        return false;
         var path = _this.$route.fullPath;
         var open = false;
 
@@ -2786,7 +2794,7 @@ var render = function() {
                   on: { "ps-scroll-y": _vm.psSectionScroll }
                 },
                 [
-                  _vm._l(_vm.sidebarItems, function(sidebarItem, index) {
+                  _vm._l(this.$page.navBar, function(sidebarItem, index) {
                     return [
                       sidebarItem.header && !_vm.sidebarItemsMin
                         ? _c(
@@ -2808,15 +2816,9 @@ var render = function() {
                                     refInFor: true,
                                     attrs: {
                                       index: index,
-                                      to:
-                                        sidebarItem.slug != "external"
-                                          ? sidebarItem.url
-                                          : "",
                                       routeName: sidebarItem.route,
                                       href: sidebarItem.href,
-                                      icon: sidebarItem.icon,
-                                      target: sidebarItem.target,
-                                      isDisabled: sidebarItem.isDisabled
+                                      icon: sidebarItem.icon
                                     }
                                   },
                                   [

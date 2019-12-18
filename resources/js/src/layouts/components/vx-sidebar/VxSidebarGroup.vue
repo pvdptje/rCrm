@@ -77,7 +77,7 @@ export default {
         },
         isGroupActive() {
             return (sidebarItem) => {
-
+				return false;
                 const path = this.$route.fullPath;
                 let open = false;
                 let func = function(sidebarItem) {

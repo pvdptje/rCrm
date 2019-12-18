@@ -30,6 +30,7 @@
                                     <h2 class="mb-1">{{ title }}</h2>
                                 </div>
 
+
                                 <!-- BREADCRUMB -->
                                 <vx-breadcrumb class="ml-4 md:block hidden" v-bind:breadcrumbs="breadcrumbs" />
 

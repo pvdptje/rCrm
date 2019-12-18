@@ -25,9 +25,8 @@ Route::get('/test', function(){
 Route::group(['middleware' => ['set.locale', 'auth']], function(){
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-    Route::get('/home', function(){
-        return redirect('/account');
-    });
+
+    Route::get('/', 'HomeController@index')->name('home.index');
 
     Route::get('/account', 'AccountController@index')->name('account.index');
     Route::post('/account/update', 'AccountController@update')->name('account.update');
